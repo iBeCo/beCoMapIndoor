@@ -1,0 +1,145 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name beCoMapIndoor
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreLocation
+import Foundation
+import GameplayKit
+import Swift
+import SwiftProtobuf
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_exported import beCoMapIndoor
+import simd
+@objc public protocol BeCoDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func beco(_ beCo: beCoMapIndoor.BeCo, didFailedWith error: any Swift.Error)
+  @objc func beco(didFindSites sites: beCoMapIndoor.BESites, around location: CoreLocation.CLLocation)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BeCo : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any beCoMapIndoor.BeCoDelegate)?
+  @objc public var beCoSDKSession: beCoMapIndoor.BESession?
+  @objc public class func sharedInstance() -> beCoMapIndoor.BeCo
+  @objc public func configureWith(licenceKey: Swift.String, usageToken: Swift.String)
+  @objc public func getSiteDetails(around location: CoreLocation.CLLocation)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BECategory : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String
+  @objc final public let color: Swift.String
+  @objc final public let imageName: Swift.String
+  @objc final public let textColourSelected: Swift.String
+  @objc deinit
+}
+public typealias BESites = [beCoMapIndoor.BESite]
+@objc public class BESite : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let identifier: Swift.String, bgColor: Swift.String
+  @objc final public let location: beCoMapIndoor.BELocation
+  @objc final public let name: Swift.String, address: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class BELocation : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum BEError : Swift.Error {
+  case BERequestFailed
+  case BEInvalidToken
+  case BEFailedToFetchSites
+  case BELocationPermissionError
+  case BEBeaconDataError
+  case BERoutingError
+  case BERoutingErrorNoValidPath
+  public static func == (a: beCoMapIndoor.BEError, b: beCoMapIndoor.BEError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension beCoMapIndoor.BEError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class BEView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any beCoMapIndoor.BEViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var voiceAssistanceEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var locationButtonIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @objc deinit
+}
+@objc public class BEFloor : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let identifier: Swift.String
+  @objc final public let name: Swift.Int
+  @objc final public let label: Swift.String, floorDescription: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public typealias BEPoints = [beCoMapIndoor.BEPoint]
+@_hasMissingDesignatedInitializers @objc public class BEPoint : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String
+  @objc final public let pointId: Swift.String
+  @objc final public let floor: beCoMapIndoor.BEFloor
+  @objc final public let category: beCoMapIndoor.BECategory
+  @objc deinit
+}
+@objc public protocol BEViewDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func becoView(_ mapView: beCoMapIndoor.BEView, didLoadWith site: beCoMapIndoor.BESite)
+  @objc func becoView(_ mapView: beCoMapIndoor.BEView, didFailedWith error: any Swift.Error)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didUpdateUserLocation point: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didSelectedPoint point: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didFindResult results: beCoMapIndoor.BEPoints, forText searchText: Swift.String)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didRouteFrom source: beCoMapIndoor.BEPoint, to destination: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didStartNavigatingFrom source: beCoMapIndoor.BEPoint, to destination: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didEndNavigationWith source: beCoMapIndoor.BEPoint, destination: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didStartPreviewFrom source: beCoMapIndoor.BEPoint, to destination: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didEndPreviewWith source: beCoMapIndoor.BEPoint, destination: beCoMapIndoor.BEPoint)
+  @objc optional func becoView(_ mapView: beCoMapIndoor.BEView, didDeviatedTo point: beCoMapIndoor.BEPoint)
+}
+@objc extension beCoMapIndoor.BEView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setSite(_ site: beCoMapIndoor.BESite)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func getPoints() -> beCoMapIndoor.BEPoints
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func findMapPoints(searchText: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func select(point: beCoMapIndoor.BEPoint?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func getRoute(from startPoint: beCoMapIndoor.BEPoint, to endPoint: beCoMapIndoor.BEPoint, wayPoints: beCoMapIndoor.BEPoints? = nil) -> [beCoMapIndoor.BEFloor]
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func showRouteOnFloor(on floor: beCoMapIndoor.BEFloor)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func reset()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func navigate()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func preview()
+}
+@objc public enum BEAuthorizationStatus : Swift.Int {
+  case BEUnknown
+  case BEUnauthorized
+  case BEAuthorized
+  case BEAuthorizing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class BESession : ObjectiveC.NSObject {
+  @objc public var autherisationStatus: beCoMapIndoor.BEAuthorizationStatus
+  @objc public var usageToken: Swift.String
+  @objc public var licenceKey: Swift.String
+  @objc deinit
+}
+extension beCoMapIndoor.BEError : Swift.Equatable {}
+extension beCoMapIndoor.BEError : Swift.Hashable {}
+extension beCoMapIndoor.BEAuthorizationStatus : Swift.Equatable {}
+extension beCoMapIndoor.BEAuthorizationStatus : Swift.Hashable {}
+extension beCoMapIndoor.BEAuthorizationStatus : Swift.RawRepresentable {}

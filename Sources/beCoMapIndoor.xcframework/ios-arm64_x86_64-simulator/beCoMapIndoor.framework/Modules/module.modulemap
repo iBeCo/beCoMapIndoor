@@ -1,0 +1,11 @@
+framework module beCoMapIndoor {
+  umbrella header "beCoMapIndoor.h"
+
+  export *
+  module * { export * }
+}
+
+module beCoMapIndoor.Swift {
+  header "beCoMapIndoor-Swift.h"
+  requires objc
+}

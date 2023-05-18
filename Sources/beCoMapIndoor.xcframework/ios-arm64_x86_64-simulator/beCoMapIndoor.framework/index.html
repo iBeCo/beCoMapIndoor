@@ -1,0 +1,595 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width"><title>Map</title><link href="public/css/ol.css" rel="stylesheet"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script><link href="bundle.css" rel="stylesheet"></head><body><section class="container-fluid outer-wrapper" id="beco-wrapper"><div id="cd-beco-map"><div id="beco-container" class="map"></div></div><div class="marker" id="marker"><div class="dot"></div><div class="pulse"></div></div></section><script src="js/1.4321c057.chunk.js"></script><script src="js/app.8f9c848c.js"></script></body><script>function getMobileOperatingSystem() {
+       var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+       if (/android/i.test(userAgent)) {
+           return "Android";
+       }
+       if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+           return "iOS";
+       }
+       return "unknown";
+   }
+	document.addEventListener("DOMContentLoaded", function() {
+
+
+      var labelGeojsonObject = {
+        'type': 'FeatureCollection',
+        'features': [
+          {
+            "type": "Feature",
+            "id": "483167828",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+              [1354.19921875,176.3671875],
+              [1488.8671875,325.390625],
+              [1415.8786755066999,499.82079772980001],
+              [1327.5390625,710.9375],
+              [1070.5078125,587.890625]
+          ]
+            },
+            "properties": {
+              "name": "MG Road",
+              "textColor": "#FFFFFF",
+              "borderColor": "#5D5755",
+              "size": "12"
+
+            }
+          },
+          
+        ]
+      };
+
+      var labelGeojsonObject = {
+            "features": [
+              {
+                "geometry": {
+                  "coordinates": [
+                    [
+                      810.8846166159,
+                      963.3920551475
+                    ],
+                    [
+                      811.1571649979,
+                      794.7444343844
+                    ]
+                    
+                  ],
+                  "type": "LineString"
+                },
+                "id": "12172",
+                "properties": {
+                  "name": "Fruits & Frozen Items Rack",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#5D5755",
+                  "size": "12"
+                },
+                "type": "Feature"
+              },
+              {
+                "geometry": {
+                  "coordinates": [
+                    [
+                      809.4088668402,
+                      1023.1067408911
+                    ],
+                    [
+                      808.8172374256,
+                      1190.4248573517
+                    ]
+                  ],
+                  "type": "LineString"
+                },
+                "id": "12176",
+                "properties": {
+                  "name": "Freezer",
+                  "textColor": "#FFFFFF",
+                  "borderColor": "#5D5755",
+                  "size": "12"
+                },
+                "type": "Feature"
+              },
+              {
+                "geometry": {
+                  "coordinates": [
+                    [
+                      809.6348825716,
+                      543.5279489189
+                    ],
+                    [
+                      808.7507622105,
+                      709.164242437
+                    ]
+                  ],
+                  "type": "LineString"
+                },
+                "id": "12181",
+                "properties": {
+                  "name": "Meat",
+                  "textColor": "red",
+                  "borderColor": "#5D5755",
+                  "size": "16"
+                },
+                "type": "Feature"
+              }
+            ],
+            "type": "FeatureCollection"
+          };
+
+      var data = [{
+        "id":1,
+        "name":0,
+        "image":"https://staging-app-becomap.s3.amazonaws.com/media/floor-image/b0c6d67406e548e1ab6b76112dfa0103.png",
+        "label":"G",
+        "description":"Ground Floor"
+        
+      },
+      {
+        "id":11,
+        "name":1,
+        "image":"https://staging-app-becomap.s3.amazonaws.com/media/floor-image/b0c6d67406e548e1ab6b76112dfa0103.png",
+        "label":"F",
+        "description":"First floor"
+      }];
+
+      var param = {
+        color : "#C1D1A3", 
+        default_floor_id : 11
+      };
+
+      var geojsonObject = {
+          'type': 'FeatureCollection',
+          'features': [
+            {
+              'type': 'Feature',
+              "id": "IND",
+              "properties": {
+                "name": "India",
+                "icon": "Cafe",
+                "marker": "Cafe-big",
+                "category_color": "blue",
+                "category_color_selected" :"red"
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [
+                  1267.1798706055,
+                  1007.5424194336
+                ]
+              }
+            },
+            {
+              'type': 'Feature',
+              "id": "AUS",
+              "properties": {
+                "name": "Australia",
+                "icon": "Default",
+                "marker": "Default-big",
+                "category_color": "red",
+                "category_color_selected" :"red"
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [
+                  1500,
+                  300
+                ]
+              }
+            },
+            {
+              'type': 'Feature',
+              "id": "WOR",
+              "properties": {
+                "name": "Workstation",
+                "icon": "Workstation",
+                "marker": "Workstation-big",
+                "category_color": "red",
+                "category_color_selected" :"red"
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [
+                  1000,
+                  300
+                ]
+              }
+            },
+            {
+              'type': 'Feature',
+              "id": "REC",
+              "properties": {
+                "name": "Reception",
+                "icon": "Reception",
+                "marker": "Reception-big",
+                "category_color": "red",
+                "category_color_selected" :"red"
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [
+                  1000,
+                  800
+                ]
+              }
+            }
+          ]
+        };
+
+
+
+        var nodeList = [[1354.19921875,176.3671875],[1488.8671875,325.390625],[1415.8786755066999,499.82079772980001],[1327.5390625,710.9375],[1070.5078125,587.890625]];
+
+        var cL = [[1291.9921875,144.921875],[1354.19921875,176.3671875]];
+
+        var arrow = [[1351.5218473181706,175.01379095204229],[1354.19921875,176.3671875],[1356.2106216159989,178.59300386948124]]
+
+		if(window.GLOBALS.DEBUG) {
+      window.initMap(data, param);
+      window.BESetMarkers(geojsonObject);
+      window.BESetCurrentPosition(600,800);
+      window.BESelectPoint("IND");
+
+      // var previewObj = {
+      //   "route" : [[[500,500],[600,600]],[[700,700],[800,800],[900,900]]],
+      //   "waypoint" : [
+      //     {
+      //       "point" : [600,600],
+      //       "name" : "a"
+      //     },
+      //     {
+      //       "point" : [900,900],
+      //       "name" : "b"
+      //     }
+      //   ]
+      // }
+
+      var previewObj = {
+        "route":[[[1291.9921875,144.921875],[1354.19921875,176.3671875],[1488.8671875,325.390625],[1669.5420680735,541.7003436105],[1686.42578125,561.9140625],[1669.5420680735,541.7003436105],[1712.40234375,451.85546875],[1793.75,490.8203125],[1886.71875,298.046875]]],
+        "waypoint":[
+          {
+            "name":"a",
+            "point":[1686.42578125,561.9140625]
+          }
+        ]
+      };
+
+      //window.BEDrawRoutePreview(previewObj);
+      window.BEDrawRoute(nodeList,cL,arrow);
+      window.BESetMapLabels(labelGeojsonObject);
+      //window.BERotate(0,[[1291.9921875,144.921875],[1354.19921875,176.3671875],[1488.8671875,325.390625]])
+    }
+	});
+
+  /**
+  * Description - Initialise the map class. This method is called via javascript Bridge by Android/iOS
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param {Object[]} floors - a list of floor  objects.
+  * @param {number} floors[].id -  id of the floor.
+  * @param {string|number} floors[].name - name of the floor.
+  * @param {string} floors[].image - image url of the floor map.
+  * @param {string} floors[].label - label of the floor.
+  * @param {string} floors[].description - description of the floor for display purpose.
+  * @param params.color Background color for the map.
+  * @param params.default_floor_id Id of the intial floor to be loaded
+  */
+
+	function init(floors, param){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.initMap(floors, param);
+    } else {
+      var floorsObj = JSON.parse(floors);
+      var paramObject = JSON.parse(param);
+      window.initMap(floorsObj, paramObject);
+    }
+		
+	}
+
+  /**
+  * Description - Set label on the Map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param  Geo Object.
+  */
+
+  function setMapLabels(labelGeojsonObject){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.BESetMapLabels(labelGeojsonObject);
+    } else {
+      var geojsonObject = JSON.parse(labelGeojsonObject);
+      window.BESetMapLabels(geojsonObject);
+    }
+  }
+
+  /**
+  * Description - Select a marker on the Map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param id Id of the marker Object to be selected
+  */
+  function selectPoint(id){
+    window.BESelectPoint(id);
+  }
+
+  /**
+  * Description - Set markers on the Map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param geojson marker geo Object.
+  */
+  function setMarkers(geojson){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.BESetMarkers(geojson);
+    } else {
+      var geojsonObject = JSON.parse(geojson);
+      window.BESetMarkers(geojsonObject);
+    }
+    
+  }
+
+  /**
+  * Description - Clear the current selected marker on the Map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  */
+  function clearSelectedPoint(){
+    window.BEClearSelectedPoint();
+  }
+ 
+  /**
+  * Description - Change the floor on the Map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param id Id of the floore Object.
+  */
+  function changeFloor(id){
+    removeLocationMarker();
+    window.BEChangeFloor(id);
+  }
+
+  //TODO 
+  function drawRoute2(coveredNodeList, arrowObject){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.BEUpdateRoute(coveredNodeList, arrowObject);
+    }else {
+      var coveredObject;
+      var arrowObjectList;
+
+      if(coveredNodeList){
+        coveredObject = JSON.parse(coveredNodeList);
+      }
+
+      if(arrowObject){
+        arrowObjectList = JSON.parse(arrowObject);
+      }
+      
+      window.BEUpdateRoute(coveredObject,arrowObjectList);
+    }
+    
+  }
+
+  /**
+  * Description - Draw Route on Map : Depricate soon 
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param {Object[]} nodeList - a list of routes.
+  * @param {Object[]} coveredNodeList - a list of routes that should be shown as covered.
+  */
+  function drawRoute(nodeList, coveredNodeList, arrowObject){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.BEDrawRoute(nodeList,coveredNodeList, arrowObject);
+    }else {
+      var routeObject;
+      var coveredObject;
+      var arrowObjectList;
+      if(nodeList){
+        routeObject = JSON.parse(nodeList);
+      }
+      if(coveredNodeList){
+        coveredObject = JSON.parse(coveredNodeList);
+      }
+
+      if(arrowObject){
+        arrowObjectList = JSON.parse(arrowObject);
+      }
+      
+      window.BEDrawRoute(routeObject,coveredObject,arrowObjectList);
+    }
+    
+  }
+
+  /**
+  * Description - Clear route on the map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  */
+  function clearRoute(){
+    window.BEClearRoute();
+  }
+
+  /**
+  * Description - Draw Route preview on Map
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param {Object} routeArray - route array Object.
+  */
+  function drawRoutePreview(routeArray){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.BEDrawRoutePreview(routeArray);
+    } else {
+      var geojsonObject = JSON.parse(routeArray);
+      window.BEDrawRoutePreview(geojsonObject);
+    }
+    
+  }
+
+  /**
+  * Description - Clear route preview on the map.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  */
+  function clearRoutePreview(){
+    window.BEClearRoutePreview();
+  }
+
+  /**
+  * Description - Clear route preview on the map - Depricate soon.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param x X position.
+  * @param y Y position.
+  */
+  function setCurrentPosition(x,y){
+    window.BESetCurrentPosition(x,y);
+  }
+
+  /**
+  * Description - Rotate current location with an angle.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  *
+  * @param angle.
+  * @param coordinates to be visible on screen
+  */
+  function rotate(angle, coordinates){
+    if (getMobileOperatingSystem() == "iOS") {
+      window.BERotate(angle, coordinates)
+    } else {
+      var coordinatesObject = JSON.parse(coordinates);
+      window.BERotate(angle, coordinatesObject)
+    }
+    
+  }
+
+  /**
+  * Description - Reset angle to original angle .
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  */
+  function resetAngle(){
+    window.BEResetAngle();
+  }
+
+  //* @deprecated x.x.x Use new_function_name() instead.
+  /**
+  * Description - Focus to current position.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  * @param x X position.
+  * @param y Y position.
+  */
+  function focusToCurrentPosition(x, y){
+    window.BEFocusToCurrentPosition(x, y);
+  }
+
+  
+  /**
+  * Description - Remove current position--- Depricate soon.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  */
+  function removeCurrentPosition(){
+    window.BERemoveCurrentPosition();
+  }
+
+  /**
+  * Description - Set Location Marker.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  * @param x X position.
+  * @param y Y position.
+  * @param rotateAngle.
+  */
+  function setLocationMarker(x, y,rotateAngle){
+    window.BESetLocationMarker(x, y, rotateAngle);
+  }
+
+  /**
+  * Description - Change angle.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  * @param rotateAngle.
+  */
+  function changeAngle(rotateAngle){
+    window.BEChangeLocationMarkerAngle(rotateAngle);
+  }
+
+  /**
+  * Description - remove Location Marker.
+  *
+  * @since      1.0.0
+  *
+  * @access private
+  */
+  function removeLocationMarker(){
+    window.BERemoveLocationMarker();
+  }
+  /**
+  * Trigger this method when a point is selected by the user on map
+  * 
+  * @param  Point ID
+  */
+  window.onPointSelected = function(id) {
+    if (getMobileOperatingSystem() == "iOS") {
+      window.webkit.messageHandlers.jsHandler.postMessage("onPointSelected:"+id);
+    } else {
+      BENativeInterface.onPointSelected(id);
+    }
+  };
+
+  /**
+  * Trigger this method when a map rendering completed
+  * 
+  */
+  window.onRenderComplete = function() {
+    if (getMobileOperatingSystem() == "iOS") {
+      window.webkit.messageHandlers.jsHandler.postMessage("onRenderComplete:");
+    } else {
+      BENativeInterface.onRenderComplete();
+    }
+      
+  };</script></html>
