@@ -22,20 +22,14 @@ You'll need to [create an account](https://app.becomap.com/accounts/register/) t
 ### Get the latest version of Xcode
 To integrate beCoMap iOS SDK, install Xcode latest version. [Xcode](https://developer.apple.com/xcode/)
 
-### Install the SDK with CocoaPods
+### Install the SDK with Swift Packages
 **Note:** If you are using the enterprise version of the SDK please refer the on boarding documentation provided for installing the SDK.
 
-The beCoMap SDK for iOS is available as a CocoaPods pod. 
-If you don't already have the CocoaPods tool, install it on macOS by running the following command from the terminal. For details, see the [CocoaPods Getting Started guide.](https://guides.cocoapods.org/using/getting-started.html)
+The beCoMap SDK for iOS is available on swift packages. 
+add following packages
 
-Edit the Podfile and add your dependencies.
-```
-target 'YOUR_APPLICATION_TARGET_NAME_HERE' do
-  pod 'beCoMap', '~> YOUR_SDK_VERSION(eg:1.6)'
-end
-```
-Run the pod install command. This will install the APIs specified in the Podfile, along with any dependencies they may have.
-Close Xcode, and then open (double-click) your project's .xcworkspace file to launch Xcode. From this time onwards, you must use the .xcworkspace file to open the project.
+1) https://github.com/apple/swift-protobuf.git
+2) https://github.com/iBeCo/beCoMapIndoor.git
 
 ## Step 2: Integrate the SDK
 
