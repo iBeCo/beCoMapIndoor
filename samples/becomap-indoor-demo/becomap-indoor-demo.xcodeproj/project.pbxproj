@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		584C01572A15FA7E00C2E0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584C01562A15FA7E00C2E0E2 /* AppDelegate.swift */; };
+		584C015E2A15FA7E00C2E0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584C015C2A15FA7E00C2E0E2 /* Main.storyboard */; };
+		584C01602A15FA7F00C2E0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584C015F2A15FA7F00C2E0E2 /* Assets.xcassets */; };
+		584C01632A15FA7F00C2E0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584C01612A15FA7F00C2E0E2 /* LaunchScreen.storyboard */; };
+		584C01772A16359E00C2E0E2 /* beCoMapIndoor in Frameworks */ = {isa = PBXBuildFile; productRef = 584C01762A16359E00C2E0E2 /* beCoMapIndoor */; };
+		584C017A2A16361700C2E0E2 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 584C01792A16361700C2E0E2 /* SwiftProtobuf */; };
+		584C017C2A16361700C2E0E2 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 584C017B2A16361700C2E0E2 /* SwiftProtobufPluginLibrary */; };
+		584C017E2A16361700C2E0E2 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 584C017D2A16361700C2E0E2 /* protoc-gen-swift */; };
+		586502C22A16378D002E9A53 /* SitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502BD2A16378D002E9A53 /* SitesViewController.swift */; };
+		586502C32A16378D002E9A53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502BE2A16378D002E9A53 /* MapViewController.swift */; };
+		586502C52A16378D002E9A53 /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502C02A16378D002E9A53 /* SiteTableViewCell.swift */; };
+		586502C62A16378D002E9A53 /* SiteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502C12A16378D002E9A53 /* SiteTableViewCell.xib */; };
+		586502DC2A16379F002E9A53 /* BESearchListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502C82A16379F002E9A53 /* BESearchListView.xib */; };
+		586502DD2A16379F002E9A53 /* BENavSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502C92A16379F002E9A53 /* BENavSearchCell.xib */; };
+		586502DE2A16379F002E9A53 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502CA2A16379F002E9A53 /* SearchTableViewCell.xib */; };
+		586502DF2A16379F002E9A53 /* BENavSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502CB2A16379F002E9A53 /* BENavSearchCell.swift */; };
+		586502E02A16379F002E9A53 /* BESearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502CC2A16379F002E9A53 /* BESearchHelper.swift */; };
+		586502E12A16379F002E9A53 /* BESearchAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586502CD2A16379F002E9A53 /* BESearchAssets.xcassets */; };
+		586502E22A16379F002E9A53 /* BEMapSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502CE2A16379F002E9A53 /* BEMapSearchBar.swift */; };
+		586502E32A16379F002E9A53 /* BEShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502CF2A16379F002E9A53 /* BEShadowView.swift */; };
+		586502E42A16379F002E9A53 /* BESearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D02A16379F002E9A53 /* BESearchListView.swift */; };
+		586502E52A16379F002E9A53 /* BENavigationAssistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D12A16379F002E9A53 /* BENavigationAssistView.swift */; };
+		586502E62A16379F002E9A53 /* BEPointAssistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D22A16379F002E9A53 /* BEPointAssistView.swift */; };
+		586502E72A16379F002E9A53 /* BENavigationInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502D32A16379F002E9A53 /* BENavigationInfoView.xib */; };
+		586502E82A16379F002E9A53 /* BENavigationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D42A16379F002E9A53 /* BENavigationInfoView.swift */; };
+		586502E92A16379F002E9A53 /* BEAssistExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D52A16379F002E9A53 /* BEAssistExtentions.swift */; };
+		586502EA2A16379F002E9A53 /* BEPointAssistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502D62A16379F002E9A53 /* BEPointAssistView.xib */; };
+		586502EB2A16379F002E9A53 /* BENavSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D72A16379F002E9A53 /* BENavSearchBar.swift */; };
+		586502EC2A16379F002E9A53 /* BENavSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502D82A16379F002E9A53 /* BENavSearchBar.xib */; };
+		586502ED2A16379F002E9A53 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502D92A16379F002E9A53 /* SearchTableViewCell.swift */; };
+		586502EE2A16379F002E9A53 /* BEMapSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502DA2A16379F002E9A53 /* BEMapSearchBar.xib */; };
+		586502EF2A16379F002E9A53 /* BENavigationAssistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502DB2A16379F002E9A53 /* BENavigationAssistView.xib */; };
+		586502F12A16385E002E9A53 /* BEExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502F02A16385E002E9A53 /* BEExtentions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		584C01532A15FA7E00C2E0E2 /* becomap-indoor-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "becomap-indoor-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		584C01562A15FA7E00C2E0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		584C015D2A15FA7E00C2E0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		584C015F2A15FA7F00C2E0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		584C01622A15FA7F00C2E0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		584C01642A15FA7F00C2E0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586502BD2A16378D002E9A53 /* SitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesViewController.swift; sourceTree = "<group>"; };
+		586502BE2A16378D002E9A53 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		586502C02A16378D002E9A53 /* SiteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
+		586502C12A16378D002E9A53 /* SiteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteTableViewCell.xib; sourceTree = "<group>"; };
+		586502C82A16379F002E9A53 /* BESearchListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BESearchListView.xib; sourceTree = "<group>"; };
+		586502C92A16379F002E9A53 /* BENavSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BENavSearchCell.xib; sourceTree = "<group>"; };
+		586502CA2A16379F002E9A53 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		586502CB2A16379F002E9A53 /* BENavSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BENavSearchCell.swift; sourceTree = "<group>"; };
+		586502CC2A16379F002E9A53 /* BESearchHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BESearchHelper.swift; sourceTree = "<group>"; };
+		586502CD2A16379F002E9A53 /* BESearchAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BESearchAssets.xcassets; sourceTree = "<group>"; };
+		586502CE2A16379F002E9A53 /* BEMapSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMapSearchBar.swift; sourceTree = "<group>"; };
+		586502CF2A16379F002E9A53 /* BEShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEShadowView.swift; sourceTree = "<group>"; };
+		586502D02A16379F002E9A53 /* BESearchListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BESearchListView.swift; sourceTree = "<group>"; };
+		586502D12A16379F002E9A53 /* BENavigationAssistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BENavigationAssistView.swift; sourceTree = "<group>"; };
+		586502D22A16379F002E9A53 /* BEPointAssistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEPointAssistView.swift; sourceTree = "<group>"; };
+		586502D32A16379F002E9A53 /* BENavigationInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BENavigationInfoView.xib; sourceTree = "<group>"; };
+		586502D42A16379F002E9A53 /* BENavigationInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BENavigationInfoView.swift; sourceTree = "<group>"; };
+		586502D52A16379F002E9A53 /* BEAssistExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEAssistExtentions.swift; sourceTree = "<group>"; };
+		586502D62A16379F002E9A53 /* BEPointAssistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BEPointAssistView.xib; sourceTree = "<group>"; };
+		586502D72A16379F002E9A53 /* BENavSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BENavSearchBar.swift; sourceTree = "<group>"; };
+		586502D82A16379F002E9A53 /* BENavSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BENavSearchBar.xib; sourceTree = "<group>"; };
+		586502D92A16379F002E9A53 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		586502DA2A16379F002E9A53 /* BEMapSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BEMapSearchBar.xib; sourceTree = "<group>"; };
+		586502DB2A16379F002E9A53 /* BENavigationAssistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BENavigationAssistView.xib; sourceTree = "<group>"; };
+		586502F02A16385E002E9A53 /* BEExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEExtentions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		584C01502A15FA7E00C2E0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584C017E2A16361700C2E0E2 /* protoc-gen-swift in Frameworks */,
+				584C017C2A16361700C2E0E2 /* SwiftProtobufPluginLibrary in Frameworks */,
+				584C01772A16359E00C2E0E2 /* beCoMapIndoor in Frameworks */,
+				584C017A2A16361700C2E0E2 /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		584C014A2A15FA7E00C2E0E2 = {
+			isa = PBXGroup;
+			children = (
+				584C01552A15FA7E00C2E0E2 /* becomap-indoor-demo */,
+				584C01542A15FA7E00C2E0E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		584C01542A15FA7E00C2E0E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				584C01532A15FA7E00C2E0E2 /* becomap-indoor-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		584C01552A15FA7E00C2E0E2 /* becomap-indoor-demo */ = {
+			isa = PBXGroup;
+			children = (
+				584C01562A15FA7E00C2E0E2 /* AppDelegate.swift */,
+				586502C72A16379F002E9A53 /* NavigationAssistViews */,
+				586502BE2A16378D002E9A53 /* MapViewController.swift */,
+				586502BD2A16378D002E9A53 /* SitesViewController.swift */,
+				586502C02A16378D002E9A53 /* SiteTableViewCell.swift */,
+				586502C12A16378D002E9A53 /* SiteTableViewCell.xib */,
+				584C015C2A15FA7E00C2E0E2 /* Main.storyboard */,
+				584C015F2A15FA7F00C2E0E2 /* Assets.xcassets */,
+				584C01612A15FA7F00C2E0E2 /* LaunchScreen.storyboard */,
+				584C01642A15FA7F00C2E0E2 /* Info.plist */,
+			);
+			path = "becomap-indoor-demo";
+			sourceTree = "<group>";
+		};
+		586502C72A16379F002E9A53 /* NavigationAssistViews */ = {
+			isa = PBXGroup;
+			children = (
+				586502F02A16385E002E9A53 /* BEExtentions.swift */,
+				586502C82A16379F002E9A53 /* BESearchListView.xib */,
+				586502C92A16379F002E9A53 /* BENavSearchCell.xib */,
+				586502CA2A16379F002E9A53 /* SearchTableViewCell.xib */,
+				586502CB2A16379F002E9A53 /* BENavSearchCell.swift */,
+				586502CC2A16379F002E9A53 /* BESearchHelper.swift */,
+				586502CD2A16379F002E9A53 /* BESearchAssets.xcassets */,
+				586502CE2A16379F002E9A53 /* BEMapSearchBar.swift */,
+				586502CF2A16379F002E9A53 /* BEShadowView.swift */,
+				586502D02A16379F002E9A53 /* BESearchListView.swift */,
+				586502D12A16379F002E9A53 /* BENavigationAssistView.swift */,
+				586502D22A16379F002E9A53 /* BEPointAssistView.swift */,
+				586502D32A16379F002E9A53 /* BENavigationInfoView.xib */,
+				586502D42A16379F002E9A53 /* BENavigationInfoView.swift */,
+				586502D52A16379F002E9A53 /* BEAssistExtentions.swift */,
+				586502D62A16379F002E9A53 /* BEPointAssistView.xib */,
+				586502D72A16379F002E9A53 /* BENavSearchBar.swift */,
+				586502D82A16379F002E9A53 /* BENavSearchBar.xib */,
+				586502D92A16379F002E9A53 /* SearchTableViewCell.swift */,
+				586502DA2A16379F002E9A53 /* BEMapSearchBar.xib */,
+				586502DB2A16379F002E9A53 /* BENavigationAssistView.xib */,
+			);
+			path = NavigationAssistViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		584C01522A15FA7E00C2E0E2 /* becomap-indoor-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 584C01672A15FA7F00C2E0E2 /* Build configuration list for PBXNativeTarget "becomap-indoor-demo" */;
+			buildPhases = (
+				584C014F2A15FA7E00C2E0E2 /* Sources */,
+				584C01502A15FA7E00C2E0E2 /* Frameworks */,
+				584C01512A15FA7E00C2E0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "becomap-indoor-demo";
+			packageProductDependencies = (
+				584C01762A16359E00C2E0E2 /* beCoMapIndoor */,
+				584C01792A16361700C2E0E2 /* SwiftProtobuf */,
+				584C017B2A16361700C2E0E2 /* SwiftProtobufPluginLibrary */,
+				584C017D2A16361700C2E0E2 /* protoc-gen-swift */,
+			);
+			productName = "becomap-indoor-demo";
+			productReference = 584C01532A15FA7E00C2E0E2 /* becomap-indoor-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		584C014B2A15FA7E00C2E0E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					584C01522A15FA7E00C2E0E2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 584C014E2A15FA7E00C2E0E2 /* Build configuration list for PBXProject "becomap-indoor-demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 584C014A2A15FA7E00C2E0E2;
+			packageReferences = (
+				584C01752A16359E00C2E0E2 /* XCRemoteSwiftPackageReference "beCoMapIndoor" */,
+				584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			productRefGroup = 584C01542A15FA7E00C2E0E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				584C01522A15FA7E00C2E0E2 /* becomap-indoor-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		584C01512A15FA7E00C2E0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586502E72A16379F002E9A53 /* BENavigationInfoView.xib in Resources */,
+				586502EA2A16379F002E9A53 /* BEPointAssistView.xib in Resources */,
+				584C01632A15FA7F00C2E0E2 /* LaunchScreen.storyboard in Resources */,
+				586502EE2A16379F002E9A53 /* BEMapSearchBar.xib in Resources */,
+				586502C62A16378D002E9A53 /* SiteTableViewCell.xib in Resources */,
+				586502DD2A16379F002E9A53 /* BENavSearchCell.xib in Resources */,
+				586502E12A16379F002E9A53 /* BESearchAssets.xcassets in Resources */,
+				586502DC2A16379F002E9A53 /* BESearchListView.xib in Resources */,
+				586502DE2A16379F002E9A53 /* SearchTableViewCell.xib in Resources */,
+				584C01602A15FA7F00C2E0E2 /* Assets.xcassets in Resources */,
+				584C015E2A15FA7E00C2E0E2 /* Main.storyboard in Resources */,
+				586502EC2A16379F002E9A53 /* BENavSearchBar.xib in Resources */,
+				586502EF2A16379F002E9A53 /* BENavigationAssistView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		584C014F2A15FA7E00C2E0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584C01572A15FA7E00C2E0E2 /* AppDelegate.swift in Sources */,
+				586502C32A16378D002E9A53 /* MapViewController.swift in Sources */,
+				586502C52A16378D002E9A53 /* SiteTableViewCell.swift in Sources */,
+				586502DF2A16379F002E9A53 /* BENavSearchCell.swift in Sources */,
+				586502E02A16379F002E9A53 /* BESearchHelper.swift in Sources */,
+				586502F12A16385E002E9A53 /* BEExtentions.swift in Sources */,
+				586502E32A16379F002E9A53 /* BEShadowView.swift in Sources */,
+				586502EB2A16379F002E9A53 /* BENavSearchBar.swift in Sources */,
+				586502E52A16379F002E9A53 /* BENavigationAssistView.swift in Sources */,
+				586502E62A16379F002E9A53 /* BEPointAssistView.swift in Sources */,
+				586502ED2A16379F002E9A53 /* SearchTableViewCell.swift in Sources */,
+				586502E42A16379F002E9A53 /* BESearchListView.swift in Sources */,
+				586502C22A16378D002E9A53 /* SitesViewController.swift in Sources */,
+				586502E22A16379F002E9A53 /* BEMapSearchBar.swift in Sources */,
+				586502E82A16379F002E9A53 /* BENavigationInfoView.swift in Sources */,
+				586502E92A16379F002E9A53 /* BEAssistExtentions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		584C015C2A15FA7E00C2E0E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				584C015D2A15FA7E00C2E0E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		584C01612A15FA7F00C2E0E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				584C01622A15FA7F00C2E0E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		584C01652A15FA7F00C2E0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		584C01662A15FA7F00C2E0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		584C01682A15FA7F00C2E0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VUCQ557J4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "becomap-indoor-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hilite.beCoMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		584C01692A15FA7F00C2E0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VUCQ557J4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "becomap-indoor-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hilite.beCoMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		584C014E2A15FA7E00C2E0E2 /* Build configuration list for PBXProject "becomap-indoor-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584C01652A15FA7F00C2E0E2 /* Debug */,
+				584C01662A15FA7F00C2E0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		584C01672A15FA7F00C2E0E2 /* Build configuration list for PBXNativeTarget "becomap-indoor-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584C01682A15FA7F00C2E0E2 /* Debug */,
+				584C01692A15FA7F00C2E0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		584C01752A16359E00C2E0E2 /* XCRemoteSwiftPackageReference "beCoMapIndoor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iBeCo/beCoMapIndoor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		584C01762A16359E00C2E0E2 /* beCoMapIndoor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584C01752A16359E00C2E0E2 /* XCRemoteSwiftPackageReference "beCoMapIndoor" */;
+			productName = beCoMapIndoor;
+		};
+		584C01792A16361700C2E0E2 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		584C017B2A16361700C2E0E2 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		584C017D2A16361700C2E0E2 /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 584C014B2A15FA7E00C2E0E2 /* Project object */;
+}
