@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		AsI19z4jLqe8rtZbe0q1xmiIKLk=
+		J0RzIheW1JbxZZMXuJSDYQU1J9Y=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -629,7 +629,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HDtEUnlhBWCNSG+gFXwSiHuLTViurpFJzL0JDBU2nGQ=
+			b47ZxxxPGNnwcI9xrzNIVThCPEay0D0cfXm+m1p54ZY=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -657,14 +657,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UfC8JLcQXlDEuHqr8lt0BofAhyFuChe6VJbUKdql3cs=
+			52U5FqbMc7jNmdKLV/BfwS1AH80XpOqar7J1lkcBr4E=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HDtEUnlhBWCNSG+gFXwSiHuLTViurpFJzL0JDBU2nGQ=
+			b47ZxxxPGNnwcI9xrzNIVThCPEay0D0cfXm+m1p54ZY=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -692,7 +692,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9EleJd2hUfOt/E4ZQZPVzN8yuD5eVal2IqbmcxsqoiM=
+			6+uaA4TZsCi+HJ/ibd4jzHvDDYSS5H/TNlExme4Ycxs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -734,7 +734,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDg3xHwASesfJm0vCjfTSeogDKFLzmEHOQVAYJ2GsGA=
+			8q/TxhiWdWyZvNEkM0rdrSjwNs6z418HokUOW5hqouE=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>

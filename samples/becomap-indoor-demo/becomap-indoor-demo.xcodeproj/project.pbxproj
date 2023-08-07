@@ -15,10 +15,7 @@
 		584C017A2A16361700C2E0E2 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 584C01792A16361700C2E0E2 /* SwiftProtobuf */; };
 		584C017C2A16361700C2E0E2 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 584C017B2A16361700C2E0E2 /* SwiftProtobufPluginLibrary */; };
 		584C017E2A16361700C2E0E2 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 584C017D2A16361700C2E0E2 /* protoc-gen-swift */; };
-		586502C22A16378D002E9A53 /* SitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502BD2A16378D002E9A53 /* SitesViewController.swift */; };
 		586502C32A16378D002E9A53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502BE2A16378D002E9A53 /* MapViewController.swift */; };
-		586502C52A16378D002E9A53 /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502C02A16378D002E9A53 /* SiteTableViewCell.swift */; };
-		586502C62A16378D002E9A53 /* SiteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502C12A16378D002E9A53 /* SiteTableViewCell.xib */; };
 		586502DC2A16379F002E9A53 /* BESearchListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502C82A16379F002E9A53 /* BESearchListView.xib */; };
 		586502DD2A16379F002E9A53 /* BENavSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502C92A16379F002E9A53 /* BENavSearchCell.xib */; };
 		586502DE2A16379F002E9A53 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502CA2A16379F002E9A53 /* SearchTableViewCell.xib */; };
@@ -40,6 +37,7 @@
 		586502EE2A16379F002E9A53 /* BEMapSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502DA2A16379F002E9A53 /* BEMapSearchBar.xib */; };
 		586502EF2A16379F002E9A53 /* BENavigationAssistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502DB2A16379F002E9A53 /* BENavigationAssistView.xib */; };
 		586502F12A16385E002E9A53 /* BEExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502F02A16385E002E9A53 /* BEExtentions.swift */; };
+		58ADD84D2A80B93600F740BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ADD84C2A80B93600F740BC /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +47,7 @@
 		584C015F2A15FA7F00C2E0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		584C01622A15FA7F00C2E0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		584C01642A15FA7F00C2E0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		586502BD2A16378D002E9A53 /* SitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesViewController.swift; sourceTree = "<group>"; };
 		586502BE2A16378D002E9A53 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		586502C02A16378D002E9A53 /* SiteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
-		586502C12A16378D002E9A53 /* SiteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteTableViewCell.xib; sourceTree = "<group>"; };
 		586502C82A16379F002E9A53 /* BESearchListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BESearchListView.xib; sourceTree = "<group>"; };
 		586502C92A16379F002E9A53 /* BENavSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BENavSearchCell.xib; sourceTree = "<group>"; };
 		586502CA2A16379F002E9A53 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -74,6 +69,7 @@
 		586502DA2A16379F002E9A53 /* BEMapSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BEMapSearchBar.xib; sourceTree = "<group>"; };
 		586502DB2A16379F002E9A53 /* BENavigationAssistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BENavigationAssistView.xib; sourceTree = "<group>"; };
 		586502F02A16385E002E9A53 /* BEExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEExtentions.swift; sourceTree = "<group>"; };
+		58ADD84C2A80B93600F740BC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				584C01562A15FA7E00C2E0E2 /* AppDelegate.swift */,
-				586502C72A16379F002E9A53 /* NavigationAssistViews */,
+				58ADD84C2A80B93600F740BC /* HomeViewController.swift */,
 				586502BE2A16378D002E9A53 /* MapViewController.swift */,
-				586502BD2A16378D002E9A53 /* SitesViewController.swift */,
-				586502C02A16378D002E9A53 /* SiteTableViewCell.swift */,
-				586502C12A16378D002E9A53 /* SiteTableViewCell.xib */,
+				586502C72A16379F002E9A53 /* NavigationAssistViews */,
 				584C015C2A15FA7E00C2E0E2 /* Main.storyboard */,
 				584C015F2A15FA7F00C2E0E2 /* Assets.xcassets */,
 				584C01612A15FA7F00C2E0E2 /* LaunchScreen.storyboard */,
@@ -224,7 +218,6 @@
 				586502EA2A16379F002E9A53 /* BEPointAssistView.xib in Resources */,
 				584C01632A15FA7F00C2E0E2 /* LaunchScreen.storyboard in Resources */,
 				586502EE2A16379F002E9A53 /* BEMapSearchBar.xib in Resources */,
-				586502C62A16378D002E9A53 /* SiteTableViewCell.xib in Resources */,
 				586502DD2A16379F002E9A53 /* BENavSearchCell.xib in Resources */,
 				586502E12A16379F002E9A53 /* BESearchAssets.xcassets in Resources */,
 				586502DC2A16379F002E9A53 /* BESearchListView.xib in Resources */,
@@ -245,17 +238,16 @@
 			files = (
 				584C01572A15FA7E00C2E0E2 /* AppDelegate.swift in Sources */,
 				586502C32A16378D002E9A53 /* MapViewController.swift in Sources */,
-				586502C52A16378D002E9A53 /* SiteTableViewCell.swift in Sources */,
 				586502DF2A16379F002E9A53 /* BENavSearchCell.swift in Sources */,
 				586502E02A16379F002E9A53 /* BESearchHelper.swift in Sources */,
 				586502F12A16385E002E9A53 /* BEExtentions.swift in Sources */,
+				58ADD84D2A80B93600F740BC /* HomeViewController.swift in Sources */,
 				586502E32A16379F002E9A53 /* BEShadowView.swift in Sources */,
 				586502EB2A16379F002E9A53 /* BENavSearchBar.swift in Sources */,
 				586502E52A16379F002E9A53 /* BENavigationAssistView.swift in Sources */,
 				586502E62A16379F002E9A53 /* BEPointAssistView.swift in Sources */,
 				586502ED2A16379F002E9A53 /* SearchTableViewCell.swift in Sources */,
 				586502E42A16379F002E9A53 /* BESearchListView.swift in Sources */,
-				586502C22A16378D002E9A53 /* SitesViewController.swift in Sources */,
 				586502E22A16379F002E9A53 /* BEMapSearchBar.swift in Sources */,
 				586502E82A16379F002E9A53 /* BENavigationInfoView.swift in Sources */,
 				586502E92A16379F002E9A53 /* BEAssistExtentions.swift in Sources */,
@@ -418,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hilite.beCoMap;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximety.hilitemall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hilite.beCoMap;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximety.hilitemall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QC41jzbpzO0b1Hc5T29WA193BzQ=
+		1r7dtQtsZ56k+1qG2HFgo4hy+M0=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MUoUp4uAPQRu2b0Tck+Ddp37o6E=
+		GtEnErLOQHl9h0Bc25R+MjDM4Tk=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CarNUKq0B/oNAJzYnpT8VsYLPzE=
+		BQDDdn9rEOftUKZAEBoU+K2zIsM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -696,7 +696,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HDtEUnlhBWCNSG+gFXwSiHuLTViurpFJzL0JDBU2nGQ=
+			b47ZxxxPGNnwcI9xrzNIVThCPEay0D0cfXm+m1p54ZY=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -724,7 +724,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gizONpCpzLgq+gFdu4ikUaoePtFbh5eP5TDotOWLFbw=
+			WLpGovq2rDgaedMs5DBm1qse2Iut6Nl3PCZkTX1ovhc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

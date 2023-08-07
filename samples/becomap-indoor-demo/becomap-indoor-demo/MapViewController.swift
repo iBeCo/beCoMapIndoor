@@ -4,7 +4,6 @@
 //
 //  Created by test on 22/07/19.
 //  Copyright © 2019 GlobeCo Technologies Pvt Ltd. All rights reserved.
-//Could not find module 'beCoMap' for target 'arm64-apple-ios'; found: x86_64-apple-ios-simulator, arm64-apple-ios-simulator, at: /Users/mithin/Projects/beCoMapIndoor/beCoMap Demo/Pods/beCoMap/beCoMap.framework/Modules/beCoMap.swiftmodule
 
 import UIKit
 import beCoMapIndoor
@@ -18,9 +17,16 @@ let proximityMessages = [
 
 class MapViewController: UIViewController {
     
+    enum MapAction {
+        case NoAction
+        case SelectPoint
+        case DrawRouteWithPoints
+    }
+    
     var site: BESite?
     var mapView: BEView!
     var myview: UIView = UIView()
+    var mapPoints: [String: BEPoint] = [:]
     var routePoints: [BEPoint] = []
     var routeFloors: [BEFloor] = []
     
@@ -135,6 +141,16 @@ extension MapViewController: BeCoDelegate {
 
 extension MapViewController: BEViewDelegate {
     func becoView(_ mapView: BEView, didLoadWith site: BESite) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            DispatchQueue.main.async { [weak self] in
+                if let strongSelf = self {
+                    let allPoints = mapView.getPoints()
+                    strongSelf.mapPoints = Dictionary(uniqueKeysWithValues: allPoints.map{ ($0.pointId, $0) })
+                    print(strongSelf.mapPoints)
+                }
+            }
+        }
     }
     
     func becoView(_ mapView: BEView, didFailedWith error: Error) {
