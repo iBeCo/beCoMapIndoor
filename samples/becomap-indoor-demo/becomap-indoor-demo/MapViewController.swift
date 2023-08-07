@@ -33,6 +33,16 @@ class MapViewController: UIViewController {
     var serchHelper: BESearchHelper?
     let beCoManager = BeCo.sharedInstance()
     
+    
+    var mapAction: MapAction = .NoAction
+    var locationPointIDs: [String] = [] {
+        didSet {
+            if locationPointIDs.count > 1 {
+                mapAction = .DrawRouteWithPoints
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -141,13 +151,13 @@ extension MapViewController: BeCoDelegate {
 
 extension MapViewController: BEViewDelegate {
     func becoView(_ mapView: BEView, didLoadWith site: BESite) {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            DispatchQueue.main.async { [weak self] in
-                if let strongSelf = self {
-                    let allPoints = mapView.getPoints()
-                    strongSelf.mapPoints = Dictionary(uniqueKeysWithValues: allPoints.map{ ($0.pointId, $0) })
-                    print(strongSelf.mapPoints)
+        let allPoints = mapView.getPoints()
+        mapPoints = Dictionary(uniqueKeysWithValues: allPoints.map{ ($0.pointId, $0) })
+        if locationPointIDs.count > 1 {
+            if let pointA = mapPoints[locationPointIDs[0]], let pointB = mapPoints[locationPointIDs[1]] {
+                let routeFloors = mapView.getRoute(from: pointA, to: pointB)
+                if routeFloors.count > 0 {
+                    mapView.showRouteOnFloor(on: routeFloors.first!)
                 }
             }
         }
@@ -172,6 +182,7 @@ extension MapViewController: BEViewDelegate {
     }
     
     func becoView(_ mapView: BEView, didSelectedPoint point: BEPoint) {
+        print("Did select point with id: \(point.pointId)")
         serchHelper?.selectPoint(point: point)
     }
     
