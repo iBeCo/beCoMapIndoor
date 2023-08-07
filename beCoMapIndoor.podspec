@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "beCoMapIndoor"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Navigation experience made simple.."
   spec.description  = "Our solutions are designed to minimise effort. We make sure our services help users to reachdestinations quicker and without confusion. Offering better control and visibility through our mapbased advanced solutions, we help organisations achieve goals with minimum loss of time and money."
   spec.homepage     = "https://becomap.com"
@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "GlobeCo Technologies Pvt Ltd" => "hello@becomap.com" }
   spec.platform     = :ios
   spec.ios.deployment_target = '13.0'
-  spec.source           = { :git => 'https://github.com/iBeCo/beCoMapIndoor.git', :tag => "0.0.3" }
+  spec.source           = { :git => 'https://github.com/iBeCo/beCoMapIndoor.git', :tag => "0.0.5" }
   spec.dependency 'SwiftProtobuf', '~> 1.21.0'
   spec.swift_version = "5.0"
 end
