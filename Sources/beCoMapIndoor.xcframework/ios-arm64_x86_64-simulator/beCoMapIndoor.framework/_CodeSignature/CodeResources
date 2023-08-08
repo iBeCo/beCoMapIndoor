@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/beCoMapIndoor-Swift.h</key>
 		<data>
-		gK599b4qITBvZPJ0BcFMwx55Bs0=
+		xPsTL/LwSr4ypV0QucNTWDosumg=
 		</data>
 		<key>Headers/beCoMapIndoor.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BDnGo5aAkHEYziglJ3DT2nIz+Do=
+		BevovF+oY0s434/wZZWiIxuOP88=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Vv4Ese3saTfZffPoolEEBrKS9D0=
+		GNJXb0Wdiklv1burYV4FhtgaGAY=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,19 +50,19 @@
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vv4Ese3saTfZffPoolEEBrKS9D0=
+		GNJXb0Wdiklv1burYV4FhtgaGAY=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sN0zNTm6PZYkv2gZyPXkZfBcKrs=
+		XB0gSaBvKeE/aOtYd0OnuF1Fk0I=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BDnGo5aAkHEYziglJ3DT2nIz+Do=
+		BevovF+oY0s434/wZZWiIxuOP88=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9nS86iuON6wSJfiRTCU1W5a0QQQ=
+		VEtlHX2hH6YcEBSznNz0P2ax7Bs=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9nS86iuON6wSJfiRTCU1W5a0QQQ=
+		VEtlHX2hH6YcEBSznNz0P2ax7Bs=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VIeKo44cPgJ5Wx8atSvrUFlpQsg=
+		qiMGZY+Vu06XHQbnSe4M5ptWxXM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -695,7 +695,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MRu16LAnPt1TV8h8cR5+GwcKe7+HBnCzOiIcElIAqx4=
+			pEtlvUqb7DBoflr5SMalX9CC6EHY4Pocs0q1XvbB6K4=
 			</data>
 		</dict>
 		<key>Headers/beCoMapIndoor.h</key>
@@ -716,14 +716,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLY9mRTw1QnzO4PAQfPHk5lsjSzbxPfvd470cJzwMJ8=
+			Krs6dFq1qzBBCKFR23s4zSSPMutYQY/JIPZ5h2R+0Us=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			98zHrrJMS9jyQd6a6SXnljt8m+iqG54vOM+5PsH76zY=
+			ccsdB2MfO79beau3hogzmitir8tbCGtX8KWHygi5/G0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -737,28 +737,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			98zHrrJMS9jyQd6a6SXnljt8m+iqG54vOM+5PsH76zY=
+			ccsdB2MfO79beau3hogzmitir8tbCGtX8KWHygi5/G0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DVt2Iyt+tB4JwNF2oxqOrvt0tvVG9SYeVHeNygQYxsk=
+			JZeMxZ7RuKpZ3QUhB4UJ9iZMRN7Vhc1GHhr83rcRzSw=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLY9mRTw1QnzO4PAQfPHk5lsjSzbxPfvd470cJzwMJ8=
+			Krs6dFq1qzBBCKFR23s4zSSPMutYQY/JIPZ5h2R+0Us=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p38yl2BdZHVA4+5mnCHtERL3vZBQVEcBHXv3/IK++W8=
+			9WLpRbjic4N7bmk/8cMK+fEArajZUsGH8mi3mFJ0LJE=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -772,14 +772,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p38yl2BdZHVA4+5mnCHtERL3vZBQVEcBHXv3/IK++W8=
+			9WLpRbjic4N7bmk/8cMK+fEArajZUsGH8mi3mFJ0LJE=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xA325izw/R2D0qW21cHSdZsKubaRH2x8ogdj1GonS5c=
+			bCGYviO1DX/Dsqvs+9nwuf5Ea5UdjSR2+4mOhp07zCY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

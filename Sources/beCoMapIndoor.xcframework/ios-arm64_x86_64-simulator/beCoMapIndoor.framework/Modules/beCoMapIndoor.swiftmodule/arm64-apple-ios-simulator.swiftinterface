@@ -31,6 +31,7 @@ import simd
   @objc final public let color: Swift.String
   @objc final public let imageName: Swift.String
   @objc final public let textColourSelected: Swift.String
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
 public typealias BESites = [beCoMapIndoor.BESite]
@@ -39,6 +40,7 @@ public typealias BESites = [beCoMapIndoor.BESite]
   @objc final public let location: beCoMapIndoor.BELocation
   @objc final public let name: Swift.String, address: Swift.String
   @objc deinit
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
@@ -85,6 +87,7 @@ extension beCoMapIndoor.BEError : Foundation.LocalizedError {
   @objc final public let identifier: Swift.String
   @objc final public let name: Swift.Int
   @objc final public let label: Swift.String, floorDescription: Swift.String
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -95,6 +98,7 @@ public typealias BEPoints = [beCoMapIndoor.BEPoint]
   @objc final public let pointId: Swift.String
   @objc final public let floor: beCoMapIndoor.BEFloor
   @objc final public let category: beCoMapIndoor.BECategory
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
 @objc public protocol BEViewDelegate : ObjectiveC.NSObjectProtocol {

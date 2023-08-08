@@ -326,6 +326,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor10BECategory")
 @property (nonatomic, readonly, copy) NSString * _Nonnull textColourSelected;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -345,6 +346,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor7BEFloor")
 @property (nonatomic, readonly) NSInteger name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
 @property (nonatomic, readonly, copy) NSString * _Nonnull floorDescription;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -381,6 +383,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor7BEPoint")
 @property (nonatomic, readonly, copy) NSString * _Nonnull pointId;
 @property (nonatomic, readonly, strong) BEFloor * _Nonnull floor;
 @property (nonatomic, readonly, strong) BECategory * _Nonnull category;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -423,6 +426,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BESite")
 @property (nonatomic, readonly, strong) BELocation * _Nonnull location;
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull address;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1171,6 +1175,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor10BECategory")
 @property (nonatomic, readonly, copy) NSString * _Nonnull textColourSelected;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1190,6 +1195,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor7BEFloor")
 @property (nonatomic, readonly) NSInteger name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
 @property (nonatomic, readonly, copy) NSString * _Nonnull floorDescription;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1226,6 +1232,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor7BEPoint")
 @property (nonatomic, readonly, copy) NSString * _Nonnull pointId;
 @property (nonatomic, readonly, strong) BEFloor * _Nonnull floor;
 @property (nonatomic, readonly, strong) BECategory * _Nonnull category;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1268,6 +1275,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BESite")
 @property (nonatomic, readonly, strong) BELocation * _Nonnull location;
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull address;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
