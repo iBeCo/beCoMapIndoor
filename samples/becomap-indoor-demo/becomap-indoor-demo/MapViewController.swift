@@ -8,6 +8,7 @@
 import UIKit
 import beCoMapIndoor
 import CoreLocation
+import MBProgressHUD
 
 let proximityMessages = [
     "Reception" : "Welcome to beCo.",
@@ -33,7 +34,6 @@ class MapViewController: UIViewController {
     var serchHelper: BESearchHelper?
     let beCoManager = BeCo.sharedInstance()
     
-    
     var mapAction: MapAction = .NoAction
     var locationPointIDs: [String] = [] {
         didSet {
@@ -45,6 +45,8 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         
         self.addMapView()
         serchHelper = BESearchHelper.init(with: self)
@@ -71,6 +73,7 @@ class MapViewController: UIViewController {
         
         mapView = BEView.init(frame: CGRect(x: 0, y: 0, width: myview.frame.size.width, height: myview.bounds.size.height - 20))
         myview.addSubview(mapView)
+        myview.isHidden = true
         mapView.translatesAutoresizingMaskIntoConstraints = false
         mapView.bottomAnchor.constraint(equalTo: myview.safeBottomAnchor).isActive = true
         mapView.leadingAnchor.constraint(equalTo: myview.safeLeadingAnchor).isActive = true
@@ -137,6 +140,7 @@ extension MapViewController: BEMapAssistDelegate {
 
 extension MapViewController: BeCoDelegate {
     func beco(_ beCo: BeCo, didFailedWith error: Error) {
+        MBProgressHUD.hide(for: (self.view)!, animated: true)
     }
     
     func beco(didFindSites sites: BESites, around location: CLLocation) {
@@ -151,6 +155,8 @@ extension MapViewController: BeCoDelegate {
 
 extension MapViewController: BEViewDelegate {
     func becoView(_ mapView: BEView, didLoadWith site: BESite) {
+        MBProgressHUD.hide(for: (self.view)!, animated: true)
+        myview.isHidden = false
         let allPoints = mapView.getPoints()
         mapPoints = Dictionary(uniqueKeysWithValues: allPoints.map{ ($0.pointId, $0) })
         if locationPointIDs.count > 1 {
@@ -164,6 +170,7 @@ extension MapViewController: BEViewDelegate {
     }
     
     func becoView(_ mapView: BEView, didFailedWith error: Error) {
+        MBProgressHUD.hide(for: (self.view)!, animated: true)
         switch error {
         case BEError.BERoutingError,BEError.BERoutingErrorNoValidPath:
             let alert = UIAlertController(title: "Routing is not possible", message: "Please provide a valid source and destination", preferredStyle: .alert)
