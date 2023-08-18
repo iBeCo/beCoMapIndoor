@@ -11,7 +11,6 @@
 		584C015E2A15FA7E00C2E0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584C015C2A15FA7E00C2E0E2 /* Main.storyboard */; };
 		584C01602A15FA7F00C2E0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584C015F2A15FA7F00C2E0E2 /* Assets.xcassets */; };
 		584C01632A15FA7F00C2E0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584C01612A15FA7F00C2E0E2 /* LaunchScreen.storyboard */; };
-		584C01772A16359E00C2E0E2 /* beCoMapIndoor in Frameworks */ = {isa = PBXBuildFile; productRef = 584C01762A16359E00C2E0E2 /* beCoMapIndoor */; };
 		584C017A2A16361700C2E0E2 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 584C01792A16361700C2E0E2 /* SwiftProtobuf */; };
 		584C017C2A16361700C2E0E2 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 584C017B2A16361700C2E0E2 /* SwiftProtobufPluginLibrary */; };
 		584C017E2A16361700C2E0E2 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 584C017D2A16361700C2E0E2 /* protoc-gen-swift */; };
@@ -39,6 +38,7 @@
 		586502EF2A16379F002E9A53 /* BENavigationAssistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586502DB2A16379F002E9A53 /* BENavigationAssistView.xib */; };
 		586502F12A16385E002E9A53 /* BEExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586502F02A16385E002E9A53 /* BEExtentions.swift */; };
 		58ADD84D2A80B93600F740BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ADD84C2A80B93600F740BC /* HomeViewController.swift */; };
+		58C924FC2A8F4FFF00904D7B /* beCoMapIndoor in Frameworks */ = {isa = PBXBuildFile; productRef = 58C924FB2A8F4FFF00904D7B /* beCoMapIndoor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,9 +79,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				584C017E2A16361700C2E0E2 /* protoc-gen-swift in Frameworks */,
+				58C924FC2A8F4FFF00904D7B /* beCoMapIndoor in Frameworks */,
 				584C017C2A16361700C2E0E2 /* SwiftProtobufPluginLibrary in Frameworks */,
 				585A69262A8DF05200B4E644 /* MBProgressHUD in Frameworks */,
-				584C01772A16359E00C2E0E2 /* beCoMapIndoor in Frameworks */,
 				584C017A2A16361700C2E0E2 /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +94,7 @@
 			children = (
 				584C01552A15FA7E00C2E0E2 /* becomap-indoor-demo */,
 				584C01542A15FA7E00C2E0E2 /* Products */,
+				58C924FA2A8F4FFF00904D7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +149,13 @@
 			path = NavigationAssistViews;
 			sourceTree = "<group>";
 		};
+		58C924FA2A8F4FFF00904D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,11 +173,11 @@
 			);
 			name = "becomap-indoor-demo";
 			packageProductDependencies = (
-				584C01762A16359E00C2E0E2 /* beCoMapIndoor */,
 				584C01792A16361700C2E0E2 /* SwiftProtobuf */,
 				584C017B2A16361700C2E0E2 /* SwiftProtobufPluginLibrary */,
 				584C017D2A16361700C2E0E2 /* protoc-gen-swift */,
 				585A69252A8DF05200B4E644 /* MBProgressHUD */,
+				58C924FB2A8F4FFF00904D7B /* beCoMapIndoor */,
 			);
 			productName = "becomap-indoor-demo";
 			productReference = 584C01532A15FA7E00C2E0E2 /* becomap-indoor-demo.app */;
@@ -483,7 +491,7 @@
 			repositoryURL = "https://github.com/iBeCo/beCoMapIndoor.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 1.0.0;
 			};
 		};
 		584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
@@ -505,11 +513,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		584C01762A16359E00C2E0E2 /* beCoMapIndoor */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 584C01752A16359E00C2E0E2 /* XCRemoteSwiftPackageReference "beCoMapIndoor" */;
-			productName = beCoMapIndoor;
-		};
 		584C01792A16361700C2E0E2 /* SwiftProtobuf */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 584C01782A16361700C2E0E2 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
@@ -529,6 +532,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 585A69242A8DF05100B4E644 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
 			productName = MBProgressHUD;
+		};
+		58C924FB2A8F4FFF00904D7B /* beCoMapIndoor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584C01752A16359E00C2E0E2 /* XCRemoteSwiftPackageReference "beCoMapIndoor" */;
+			productName = beCoMapIndoor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

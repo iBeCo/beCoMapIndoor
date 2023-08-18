@@ -72,6 +72,7 @@ class MapViewController: UIViewController {
         myview.trailingAnchor.constraint(equalTo: view.safeTrailingAnchor).isActive = true
         
         mapView = BEView.init(frame: CGRect(x: 0, y: 0, width: myview.frame.size.width, height: myview.bounds.size.height - 20))
+        mapView.backgroundColor = .black
         myview.addSubview(mapView)
         myview.isHidden = true
         mapView.translatesAutoresizingMaskIntoConstraints = false
