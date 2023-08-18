@@ -149,6 +149,7 @@ extension MapViewController: BeCoDelegate {
             mapView.setSite(mapSites[0])
         } else if sites.count > 0 {
             mapView.setSite(sites[0])
+            
         }
     }
 }

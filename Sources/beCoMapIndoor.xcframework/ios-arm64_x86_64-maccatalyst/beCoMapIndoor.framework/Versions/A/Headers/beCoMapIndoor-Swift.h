@@ -432,6 +432,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BESite")
 
 @protocol BEViewDelegate;
 @class NSCoder;
+@class UIColor;
 
 /// You use this class as-is to display map information from your application. When you initialize a map view, you specify the BESite for that map to display by calling the setSite() function. The SDK makes the initial BEFloor and floor region visible based on the user’s current location or default map settings. In addition to this, BEView supports many standard user interactions for changing the position and zoom level of the map. In particular, map views support swipe and pinch gestures for scrolling around the map and zooming in and out. BEView also provides a floor switch button that enables the functionality to switch between floors.
 /// version:
@@ -464,6 +465,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @end
 
 
@@ -1281,6 +1283,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BESite")
 
 @protocol BEViewDelegate;
 @class NSCoder;
+@class UIColor;
 
 /// You use this class as-is to display map information from your application. When you initialize a map view, you specify the BESite for that map to display by calling the setSite() function. The SDK makes the initial BEFloor and floor region visible based on the user’s current location or default map settings. In addition to this, BEView supports many standard user interactions for changing the position and zoom level of the map. In particular, map views support swipe and pinch gestures for scrolling around the map and zooming in and out. BEView also provides a floor switch button that enables the functionality to switch between floors.
 /// version:
@@ -1313,6 +1316,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 @end
 
 

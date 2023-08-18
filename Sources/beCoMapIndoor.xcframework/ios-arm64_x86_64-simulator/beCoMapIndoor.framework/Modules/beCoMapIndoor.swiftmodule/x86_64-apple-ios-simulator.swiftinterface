@@ -81,6 +81,10 @@ extension beCoMapIndoor.BEError : Foundation.LocalizedError {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
   @objc deinit
 }
 @objc public class BEFloor : ObjectiveC.NSObject, Swift.Codable {
