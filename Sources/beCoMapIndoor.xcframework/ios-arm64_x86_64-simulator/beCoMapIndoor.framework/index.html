@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width"><title>Map</title><link href="public/css/ol.css" rel="stylesheet"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script><link href="bundle.css" rel="stylesheet"></head><body><section class="container-fluid outer-wrapper" id="beco-wrapper"><div id="cd-beco-map"><div id="beco-container" class="map"></div></div><div class="marker" id="marker"><div class="dot"></div><div class="pulse"></div></div></section><script src="js/1.4321c057.chunk.js"></script><script src="js/app.8f9c848c.js"></script></body><script>function getMobileOperatingSystem() {
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width"><title>Map</title><link href="public/css/ol.css" rel="stylesheet"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script><link href="bundle.css" rel="stylesheet"></head><body><section class="container-fluid outer-wrapper" id="beco-wrapper"><div id="cd-beco-map"><div id="beco-container" class="map"></div></div><div class="marker" id="marker"><div class="dot"></div><div class="pulse"></div></div></section><script src="js/1.a40beea9.chunk.js"></script><script src="js/app.b9ee4552.js"></script></body><script>function getMobileOperatingSystem() {
        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
        if (/android/i.test(userAgent)) {
            return "Android";
@@ -31,8 +31,8 @@
               "name": "MG Road",
               "textColor": "#FFFFFF",
               "borderColor": "#5D5755",
-              "size": "12"
-
+              "size": "12",
+              "clickable": false
             }
           },
           
@@ -61,7 +61,8 @@
                   "name": "Fruits & Frozen Items Rack",
                   "textColor": "#FFFFFF",
                   "borderColor": "#5D5755",
-                  "size": "12"
+                  "size": "12",
+                  "clickable": false
                 },
                 "type": "Feature"
               },
@@ -84,7 +85,8 @@
                   "name": "Freezer",
                   "textColor": "#FFFFFF",
                   "borderColor": "#5D5755",
-                  "size": "12"
+                  "size": "12",
+                  "clickable": true
                 },
                 "type": "Feature"
               },
@@ -107,7 +109,8 @@
                   "name": "Meat",
                   "textColor": "red",
                   "borderColor": "#5D5755",
-                  "size": "16"
+                  "size": "16",
+                  "clickable": false
                 },
                 "type": "Feature"
               }
@@ -147,7 +150,8 @@
                 "icon": "Cafe",
                 "marker": "Cafe-big",
                 "category_color": "blue",
-                "category_color_selected" :"red"
+                "category_color_selected" :"red",
+                "clickable": true
               },
               'geometry': {
                 'type': 'Point',
@@ -165,7 +169,8 @@
                 "icon": "Default",
                 "marker": "Default-big",
                 "category_color": "red",
-                "category_color_selected" :"red"
+                "category_color_selected" :"red",
+                "clickable": false
               },
               'geometry': {
                 'type': 'Point',
@@ -181,9 +186,10 @@
               "properties": {
                 "name": "Workstation",
                 "icon": "Workstation",
-                "marker": "Workstation-big",
+                "marker": "Workstation",
                 "category_color": "red",
-                "category_color_selected" :"red"
+                "category_color_selected" :"red",
+                "clickable": false
               },
               'geometry': {
                 'type': 'Point',
@@ -201,7 +207,8 @@
                 "icon": "Reception",
                 "marker": "Reception-big",
                 "category_color": "red",
-                "category_color_selected" :"red"
+                "category_color_selected" :"red",
+                "clickable": false
               },
               'geometry': {
                 'type': 'Point',

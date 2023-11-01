@@ -6,23 +6,23 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		M6W7IwBuSND+l/3BufEcja+1zdc=
+		kGFTLXPyUct+Qcuj/4Rq+GGKNUQ=
 		</data>
 		<key>Resources/BENavigationAssist.nib</key>
 		<data>
-		o/26iZp3amxX9fGUAvMbmYG8mHE=
+		y0MqyUMfrWyohUJ/Nl58BUCCWkU=
 		</data>
 		<key>Resources/BENavigationExit.nib</key>
 		<data>
-		9po8YV4vbg7XwlY2VZGnVgn7ZwQ=
+		gqRUJLIUiLWmF5DmjWSOjEZZzV0=
 		</data>
 		<key>Resources/BEStepSwitcher.nib</key>
 		<data>
-		VWI2q2sX9HyjUmUWBgkxf1hw/RY=
+		PFqVAgwL2BMzzwmJzfMHKvYxRRk=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		J0RzIheW1JbxZZMXuJSDYQU1J9Y=
+		sc95a8ZKiGBixS5Ltk+p9wz87aE=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Resources/bundle.css</key>
 		<data>
-		oTcrEoeC5mvQS8X34j/VhPYyueA=
+		PEnhD7xM+/k7S83+aJ9fIq5URqw=
 		</data>
 		<key>Resources/index.html</key>
 		<data>
-		V1q/aVZuvrQQ8hbqkeLbkfTZR0w=
+		PhEotEzfkbnmvCx3+TjNk4IhaOg=
 		</data>
 		<key>Resources/js/1.4321c057.chunk.js</key>
 		<data>
@@ -44,6 +44,14 @@
 		<data>
 		/L7ce61GsRSDNyhhwnHZLpfYFLo=
 		</data>
+		<key>Resources/js/1.a40beea9.chunk.js</key>
+		<data>
+		4dxXma/0rtE6eXQzO5U+uZ51LIo=
+		</data>
+		<key>Resources/js/1.a40beea9.chunk.js.map</key>
+		<data>
+		0ZricsnBQn9XEYAxJWLh5SEqrP0=
+		</data>
 		<key>Resources/js/app.8f9c848c.js</key>
 		<data>
 		IkreZyX17dS8rIJjx+uaLrfP/xc=
@@ -51,6 +59,14 @@
 		<key>Resources/js/app.8f9c848c.js.map</key>
 		<data>
 		xVbcaBdKg0d35hI5dA1lafwPwpk=
+		</data>
+		<key>Resources/js/app.b9ee4552.js</key>
+		<data>
+		GVcd1J6Iwjr4twHpVdCZoXYqbZo=
+		</data>
+		<key>Resources/js/app.b9ee4552.js.map</key>
+		<data>
+		89dQLq01fPu8x8RVk/wywBfWhPs=
 		</data>
 		<key>Resources/public/css/ol.css</key>
 		<data>
@@ -615,7 +631,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pT7nLb9csOELj/ycXiXXRkf6NH5iY4AWb2IFhRJ7k/w=
+			YujqGYHYrbNrEqhu7ckJmUu6VAp3y1FrcLOljnfEU9w=
 			</data>
 		</dict>
 		<key>Headers/beCoMapIndoor.h</key>
@@ -629,112 +645,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CqPNMcl+r9XKjB4fGTXX8v9QQHlbtc2f3VgUaUxgR/g=
+			/xTH563SZv1whh8dTIkYA4GCnZ4fBk9PsupZJpKFwzM=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2BUM4RSjMAj/Q/11zgMWOISyXAu75VHBvnfdkbIeLk=
+			s73IiOXrFAeiN+cqYd6cgEGBVskEUOrJVnGfud2sSS4=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GKvKww3urWtXlZlnwUjyti2FSGAe4EFa1rdcvIFnNU8=
+			p6GRt+nVNJwOsA5HCz42doVar0nszYyG5rA3yepMHXM=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2BUM4RSjMAj/Q/11zgMWOISyXAu75VHBvnfdkbIeLk=
+			s73IiOXrFAeiN+cqYd6cgEGBVskEUOrJVnGfud2sSS4=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tESQmUaRCvbKlWhUH1yEiZCQw831VoAumIoZhh0yHl4=
+			IZykrPTBKc0ceGmPGJvimNa7GSMyRiXF9r/+kmWf6U4=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CqPNMcl+r9XKjB4fGTXX8v9QQHlbtc2f3VgUaUxgR/g=
+			/xTH563SZv1whh8dTIkYA4GCnZ4fBk9PsupZJpKFwzM=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzeWg10lDrhXJcGYtzB/UQegoARtLwF17K7wPwryKbk=
+			v7aqpsPgjFJP7cUkeHDx7iC9LU8oTo31yLOWUUCS+N4=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QZzRA80MI9Qn2mZgEukNzT32EhbPOf/frMC6mGDr6rM=
+			LgnNsbAwYKJeMHG2guOaek+Cnqj82HS5hmbS+Xkn6g8=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzeWg10lDrhXJcGYtzB/UQegoARtLwF17K7wPwryKbk=
+			v7aqpsPgjFJP7cUkeHDx7iC9LU8oTo31yLOWUUCS+N4=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJNuttc9eaHO+1iP8MhIBe5BZOuO0Bzv9no6WOjSMkE=
+			t60MLS9abLVivIwSDoUL4sreKMRqPXSdxsl99vnE7Mg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			As+OCXpTeDI6S+er+lTLQQxAqjHhtWqT8DfQ2QJI07g=
+			kZmwp7ehLf/EU8OdV+i7F/TTjJgz3jPRYePApjm7ZJU=
 			</data>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dKh0CYlcnqM8d/aMyPCyYNKGaI8I3iXxENp18z4OGeA=
+			9p2TpDqET+WSGZmunP6PHR/mTS4mNxKIOULRhMspOvs=
 			</data>
 		</dict>
 		<key>Resources/BENavigationAssist.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bgZduwAkQ5x8Fug4oUQrIv9Ov1w+DIGMbVdP1MJX6d4=
+			4Cp4gvWWknQevKcv+erqU76LNf98xPIDw9/7tKQLLDA=
 			</data>
 		</dict>
 		<key>Resources/BENavigationExit.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AZskmyIPYCiHPxX//MPwYB6TKVniHRbox7f5F24bbVY=
+			sG6HSiCp55TCu8eSEXpqSu3eWskdM8V8ATUsAbenSak=
 			</data>
 		</dict>
 		<key>Resources/BEStepSwitcher.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EFdEajDU14Bb6Z6Jdu8GDrFykWt1NoO2LHoSQFiOtN4=
+			NjE+L5hF7H+KxXVrVFB39KBnsdI6JWUcXxDFfftCHCE=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8q/TxhiWdWyZvNEkM0rdrSjwNs6z418HokUOW5hqouE=
+			Jj2nP5lv1lbZbss/C6PaTb3V8q8NYMrHtpFM16yht6s=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>
@@ -748,14 +764,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVUNEcNFFad1ur2nPIJRu5d6kjQ/lJTlNouB3EeqeZM=
+			Nrj011cI0y+zHAP4DeJ+BaDE6WicDKKcvqxnaO0gaMM=
 			</data>
 		</dict>
 		<key>Resources/index.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sb5K9IcurS7CgCNKLM3b3UH7SoTtkG6gGLKjWH/LXdM=
+			E44Li1GS1D910JiKkkH6M4OAw1fFjIm7JCAuiuNygSA=
 			</data>
 		</dict>
 		<key>Resources/js/1.4321c057.chunk.js</key>
@@ -772,6 +788,20 @@
 			5wKW1JZ03ZPZiBipwJEik7ihIt9LXbd43n9zvzxXZ4U=
 			</data>
 		</dict>
+		<key>Resources/js/1.a40beea9.chunk.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S4kJWYGeIYKCcunXoZ94vTn5j/uK3I9QI9XY4Xfo/Y8=
+			</data>
+		</dict>
+		<key>Resources/js/1.a40beea9.chunk.js.map</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pTpTIIhNh66b2kNy75GJyZ5zS9xc7qYrf6Ii75Z8fgI=
+			</data>
+		</dict>
 		<key>Resources/js/app.8f9c848c.js</key>
 		<dict>
 			<key>hash2</key>
@@ -784,6 +814,20 @@
 			<key>hash2</key>
 			<data>
 			IPzj238N9RCjJ2Qp2xB902I+sZxl0T6VamGKiXscZ2E=
+			</data>
+		</dict>
+		<key>Resources/js/app.b9ee4552.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fcl4mEsdkE79JJf4G/0klqI3ELhTKq93rNY1zEzjpuw=
+			</data>
+		</dict>
+		<key>Resources/js/app.b9ee4552.js.map</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			laXU8e4Mq9Z9OutlbnI8A5sbmEh8Jp6bkQNtpimtQxY=
 			</data>
 		</dict>
 		<key>Resources/public/css/ol.css</key>
