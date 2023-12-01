@@ -360,7 +360,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor10BECategory")
 SWIFT_CLASS("_TtC13beCoMapIndoor7BEFloor")
 @interface BEFloor : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
-@property (nonatomic, readonly) NSInteger name;
+@property (nonatomic, readonly) NSInteger floorIndex;
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
 @property (nonatomic, readonly, copy) NSString * _Nonnull floorDescription;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
@@ -479,6 +479,13 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 ///   </li>
 /// </ul>
 @property (nonatomic) BOOL locationButtonIsHidden;
+/// var defaultFloorIndex:
+/// <ul>
+///   <li>
+///     By setting value,  can choose the default floor. The value can be configured in dashboard by setting floor sort order.
+///   </li>
+/// </ul>
+@property (nonatomic) NSInteger defaultFloorIndex;
 /// You can create your map views programmatically. When creating a view, you typically specify its initial size and position relative to its future superview. To add BEView as a subview to another view, call the addSubview(_:) method on the superview.
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -509,6 +516,15 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 /// \param searchText Search string
 ///
 - (void)findMapPointsWithSearchText:(NSString * _Nonnull)searchText;
+/// selectFloor:
+/// <ul>
+///   <li>
+///     Function will show BEFloor with floorIndex on BEView
+///   </li>
+/// </ul>
+/// \param index BEfloor floorIndex value
+///
+- (void)selectFloorWith:(NSInteger)index;
 /// <h2>select(point: BEPoint?)</h2>
 /// The function will help you to select a point on your <a href="https://docs/reference/ios/Classes/BEView.html">BEView</a> programmatically.
 /// On selction compleation you will get a <a href="https://docs/reference/ios/Protocols/BEViewDelegate.html">BEViewDelegate</a> callback on <code>becoView(_:didSelectedPoint:)</code>
@@ -1233,7 +1249,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor10BECategory")
 SWIFT_CLASS("_TtC13beCoMapIndoor7BEFloor")
 @interface BEFloor : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
-@property (nonatomic, readonly) NSInteger name;
+@property (nonatomic, readonly) NSInteger floorIndex;
 @property (nonatomic, readonly, copy) NSString * _Nonnull label;
 @property (nonatomic, readonly, copy) NSString * _Nonnull floorDescription;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
@@ -1352,6 +1368,13 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 ///   </li>
 /// </ul>
 @property (nonatomic) BOOL locationButtonIsHidden;
+/// var defaultFloorIndex:
+/// <ul>
+///   <li>
+///     By setting value,  can choose the default floor. The value can be configured in dashboard by setting floor sort order.
+///   </li>
+/// </ul>
+@property (nonatomic) NSInteger defaultFloorIndex;
 /// You can create your map views programmatically. When creating a view, you typically specify its initial size and position relative to its future superview. To add BEView as a subview to another view, call the addSubview(_:) method on the superview.
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -1382,6 +1405,15 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 /// \param searchText Search string
 ///
 - (void)findMapPointsWithSearchText:(NSString * _Nonnull)searchText;
+/// selectFloor:
+/// <ul>
+///   <li>
+///     Function will show BEFloor with floorIndex on BEView
+///   </li>
+/// </ul>
+/// \param index BEfloor floorIndex value
+///
+- (void)selectFloorWith:(NSInteger)index;
 /// <h2>select(point: BEPoint?)</h2>
 /// The function will help you to select a point on your <a href="https://docs/reference/ios/Classes/BEView.html">BEView</a> programmatically.
 /// On selction compleation you will get a <a href="https://docs/reference/ios/Protocols/BEViewDelegate.html">BEViewDelegate</a> callback on <code>becoView(_:didSelectedPoint:)</code>

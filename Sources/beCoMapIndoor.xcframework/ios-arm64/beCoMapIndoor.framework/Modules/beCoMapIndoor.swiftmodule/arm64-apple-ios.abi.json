@@ -2440,6 +2440,101 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "defaultFloorIndex",
+            "printedName": "defaultFloorIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@beCoMapIndoor@objc(cs)BEView(py)defaultFloorIndex",
+            "mangledName": "$s13beCoMapIndoor6BEViewC17defaultFloorIndexSivp",
+            "moduleName": "beCoMapIndoor",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@beCoMapIndoor@objc(cs)BEView(im)defaultFloorIndex",
+                "mangledName": "$s13beCoMapIndoor6BEViewC17defaultFloorIndexSivg",
+                "moduleName": "beCoMapIndoor",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@beCoMapIndoor@objc(cs)BEView(im)setDefaultFloorIndex:",
+                "mangledName": "$s13beCoMapIndoor6BEViewC17defaultFloorIndexSivs",
+                "moduleName": "beCoMapIndoor",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13beCoMapIndoor6BEViewC17defaultFloorIndexSivM",
+                "mangledName": "$s13beCoMapIndoor6BEViewC17defaultFloorIndexSivM",
+                "moduleName": "beCoMapIndoor",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(frame:)",
@@ -2735,6 +2830,38 @@
             "mangledName": "$s13beCoMapIndoor6BEViewC04findC6Points10searchTextySS_tF",
             "moduleName": "beCoMapIndoor",
             "objc_name": "findMapPointsWithSearchText:",
+            "declAttributes": [
+              "Dynamic",
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectFloor",
+            "printedName": "selectFloor(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@beCoMapIndoor@objc(cs)BEView(im)selectFloorWith:",
+            "mangledName": "$s13beCoMapIndoor6BEViewC11selectFloor4withySi_tF",
+            "moduleName": "beCoMapIndoor",
+            "objc_name": "selectFloorWith:",
             "declAttributes": [
               "Dynamic",
               "Custom",
@@ -3183,8 +3310,8 @@
           },
           {
             "kind": "Var",
-            "name": "name",
-            "printedName": "name",
+            "name": "floorIndex",
+            "printedName": "floorIndex",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3194,8 +3321,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@beCoMapIndoor@objc(cs)BEFloor(py)name",
-            "mangledName": "$s13beCoMapIndoor7BEFloorC4nameSivp",
+            "usr": "c:@M@beCoMapIndoor@objc(cs)BEFloor(py)floorIndex",
+            "mangledName": "$s13beCoMapIndoor7BEFloorC10floorIndexSivp",
             "moduleName": "beCoMapIndoor",
             "declAttributes": [
               "Final",
@@ -3219,8 +3346,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@beCoMapIndoor@objc(cs)BEFloor(im)name",
-                "mangledName": "$s13beCoMapIndoor7BEFloorC4nameSivg",
+                "usr": "c:@M@beCoMapIndoor@objc(cs)BEFloor(im)floorIndex",
+                "mangledName": "$s13beCoMapIndoor7BEFloorC10floorIndexSivg",
                 "moduleName": "beCoMapIndoor",
                 "implicit": true,
                 "declAttributes": [
@@ -6124,84 +6251,84 @@
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "StringLiteral",
-      "offset": 2571,
+      "offset": 2583,
       "length": 29,
       "value": "\"Failed to fetch floor data.\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2696,
       "length": 29,
       "value": "\"Failed to fetch floor data.\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "BooleanLiteral",
-      "offset": 3230,
+      "offset": 3242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "StringLiteral",
-      "offset": 3503,
+      "offset": 3515,
       "length": 50,
       "value": "\"Processing map data for floor \""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "StringLiteral",
-      "offset": 3549,
+      "offset": 3561,
       "length": 3,
       "value": "\"...\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "IntegerLiteral",
-      "offset": 3893,
+      "offset": 4480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "StringLiteral",
-      "offset": 4191,
+      "offset": 4602,
       "length": 34,
       "value": "\"Map data processed successfully.\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "BooleanLiteral",
-      "offset": 4853,
+      "offset": 5264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "IntegerLiteral",
-      "offset": 4901,
+      "offset": 5312,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "BooleanLiteral",
-      "offset": 4992,
+      "offset": 5403,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "IntegerLiteral",
-      "offset": 5044,
+      "offset": 5455,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BESite.swift",
       "kind": "StringLiteral",
-      "offset": 5815,
+      "offset": 6226,
       "length": 10,
       "value": "\"beCoMapIndoor.BELocation\""
     },
@@ -9280,652 +9407,659 @@
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1982,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "Array",
-      "offset": 1797,
+      "offset": 2030,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1974,
+      "offset": 2207,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2034,
+      "offset": 2267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2381,
+      "offset": 2614,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2494,
+      "offset": 2727,
       "length": 3,
       "value": "-20"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2510,
+      "offset": 2743,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2595,
+      "offset": 2828,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2610,
+      "offset": 2843,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2672,
+      "offset": 2905,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2687,
+      "offset": 2920,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2750,
+      "offset": 2983,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2765,
+      "offset": 2998,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2798,
+      "offset": 3031,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2985,
+      "offset": 3218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "StringLiteral",
-      "offset": 3063,
+      "offset": 3296,
       "length": 20,
       "value": "\"be_ico_current_loc\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3249,
+      "offset": 3482,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3365,
+      "offset": 3598,
       "length": 3,
       "value": "-20"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3381,
+      "offset": 3614,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3470,
+      "offset": 3703,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3486,
+      "offset": 3719,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3550,
+      "offset": 3783,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3565,
+      "offset": 3798,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3630,
+      "offset": 3863,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3645,
+      "offset": 3878,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3871,
+      "offset": 4104,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3982,
+      "offset": 4215,
       "length": 3,
       "value": "-44"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3998,
+      "offset": 4231,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4086,
+      "offset": 4319,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4176,
+      "offset": 4409,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4241,
+      "offset": 4474,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4257,
+      "offset": 4490,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4292,
+      "offset": 4525,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4511,
+      "offset": 4744,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "FloatLiteral",
-      "offset": 4734,
+      "offset": 4967,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4749,
+      "offset": 4982,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "FloatLiteral",
-      "offset": 4906,
+      "offset": 5139,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4921,
+      "offset": 5154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "FloatLiteral",
-      "offset": 5073,
+      "offset": 5306,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5088,
+      "offset": 5321,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5256,
+      "offset": 5489,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5425,
+      "offset": 5658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5619,
+      "offset": 5852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5769,
+      "offset": 6002,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5785,
+      "offset": 6018,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5868,
+      "offset": 6101,
       "length": 3,
       "value": "-20"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5884,
+      "offset": 6117,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5943,
+      "offset": 6176,
       "length": 2,
       "value": "47"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5958,
+      "offset": 6191,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6016,
+      "offset": 6249,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6032,
+      "offset": 6265,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6156,
+      "offset": 6389,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6198,
+      "offset": 6431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6202,
+      "offset": 6435,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6207,
+      "offset": 6440,
       "length": 3,
       "value": "154"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6213,
+      "offset": 6446,
       "length": 2,
       "value": "74"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6576,
+      "offset": 6809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6876,
+      "offset": 7109,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8787,
+      "offset": 9020,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8857,
+      "offset": 9099,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "StringLiteral",
-      "offset": 9162,
+      "offset": 9605,
       "length": 28,
       "value": "\"BEView loaded successfully\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "FloatLiteral",
-      "offset": 9257,
+      "offset": 9700,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10717,
+      "offset": 11160,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10721,
+      "offset": 11164,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "Array",
-      "offset": 10868,
+      "offset": 11311,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11522,
+      "offset": 11965,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11563,
+      "offset": 12006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12106,
+      "offset": 12549,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "StringLiteral",
-      "offset": 14135,
+      "offset": 14578,
       "length": 59,
       "value": "\"Authorization failure. Invalid access token\/consumer key.\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15301,
+      "offset": 15744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "StringLiteral",
-      "offset": 16130,
+      "offset": 16573,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16169,
+      "offset": 16612,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16785,
+      "offset": 17228,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16865,
+      "offset": 17308,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16907,
+      "offset": 17350,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17010,
+      "offset": 17453,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17058,
+      "offset": 17501,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17170,
+      "offset": 17613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17226,
+      "offset": 17669,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17283,
+      "offset": 17726,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "StringLiteral",
-      "offset": 17440,
+      "offset": 17883,
       "length": 17,
       "value": "\"Preview Enabled\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "Array",
-      "offset": 17628,
+      "offset": 18071,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "StringLiteral",
-      "offset": 17683,
+      "offset": 18126,
       "length": 20,
       "value": "\"Navigation Enabled\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17746,
+      "offset": 18189,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18032,
+      "offset": 18475,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18616,
+      "offset": 19059,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18669,
+      "offset": 19112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18738,
+      "offset": 19181,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18949,
+      "offset": 19392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19002,
+      "offset": 19445,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19369,
+      "offset": 19812,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19412,
+      "offset": 19855,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19449,
+      "offset": 19892,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20521,
+      "offset": 20964,
       "length": 1,
       "value": "0"
     },
@@ -11395,175 +11529,189 @@
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "Array",
-      "offset": 692,
+      "offset": 698,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "BooleanLiteral",
-      "offset": 752,
+      "offset": 758,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "BooleanLiteral",
-      "offset": 792,
+      "offset": 798,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 903,
-      "length": 7,
-      "value": "\"image\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 962,
-      "length": 13,
-      "value": "\"description\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 1005,
-      "length": 12,
-      "value": "\"build_name\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 903,
-      "length": 7,
-      "value": "\"image\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 962,
-      "length": 13,
-      "value": "\"description\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 1005,
-      "length": 12,
-      "value": "\"build_name\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 1271,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
-      "kind": "StringLiteral",
-      "offset": 1293,
+      "offset": 904,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 1319,
+      "offset": 936,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 1351,
+      "offset": 995,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 1038,
+      "length": 12,
+      "value": "\"build_name\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 936,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 995,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 1038,
+      "length": 12,
+      "value": "\"build_name\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 1304,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 1326,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 1358,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
+      "kind": "StringLiteral",
+      "offset": 1390,
       "length": 7,
       "value": "\"label\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 1379,
+      "offset": 1418,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "Array",
-      "offset": 1593,
+      "offset": 1632,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 1842,
+      "offset": 1881,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 1850,
+      "offset": 1889,
       "length": 19,
       "value": "\"FeatureCollection\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 1883,
+      "offset": 1922,
       "length": 10,
       "value": "\"features\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 2504,
+      "offset": 2543,
       "length": 43,
       "value": "\"Floor Graph Fetched (Protofille recieved)\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2603,
+      "offset": 2642,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3119,
+      "offset": 3158,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 3164,
+      "offset": 3203,
       "length": 68,
       "value": "\"Floor plan fetching failed with error:\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 3231,
+      "offset": 3270,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 3766,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BEFloor.swift",
       "kind": "Array",
-      "offset": 3822,
+      "offset": 3861,
       "length": 2,
       "value": "[]"
     },
@@ -11779,22 +11927,36 @@
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEViewAccess.swift",
+      "kind": "StringLiteral",
+      "offset": 3464,
+      "length": 37,
+      "value": "\"No Floor found with index: \""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEViewAccess.swift",
+      "kind": "StringLiteral",
+      "offset": 3500,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEViewAccess.swift",
       "kind": "Array",
-      "offset": 5039,
+      "offset": 5658,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEViewAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 5178,
+      "offset": 5797,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/BeCoMap\/BEViewAccess.swift",
       "kind": "BooleanLiteral",
-      "offset": 7589,
+      "offset": 8208,
       "length": 4,
       "value": "true"
     },
@@ -12627,112 +12789,112 @@
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "StringLiteral",
-      "offset": 2689,
+      "offset": 2755,
       "length": 27,
       "value": "\"Not a valid route request\""
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 2907,
+      "offset": 2973,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "Array",
-      "offset": 2991,
+      "offset": 3057,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3030,
+      "offset": 3096,
       "length": 2,
       "value": "97"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "Array",
-      "offset": 3075,
+      "offset": 3141,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "Array",
-      "offset": 3169,
+      "offset": 3235,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3327,
+      "offset": 3393,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3346,
+      "offset": 3412,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3418,
+      "offset": 3484,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3437,
+      "offset": 3503,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3604,
+      "offset": 3670,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 3641,
+      "offset": 3707,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 3863,
+      "offset": 3929,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 3995,
+      "offset": 4061,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 4270,
+      "offset": 4336,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mithin\/Projects\/beCoMapIndoor\/beCo-iOS-SDK\/beCoMapIndoor\/beCoMapIndoor\/Models\/BERoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 4915,
+      "offset": 4981,
       "length": 4,
       "value": "true"
     },

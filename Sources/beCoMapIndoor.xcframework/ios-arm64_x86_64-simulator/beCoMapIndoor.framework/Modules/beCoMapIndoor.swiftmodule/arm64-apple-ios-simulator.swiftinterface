@@ -81,6 +81,7 @@ extension beCoMapIndoor.BEError : Foundation.LocalizedError {
     @objc get
     @objc set
   }
+  @objc @_Concurrency.MainActor(unsafe) public var defaultFloorIndex: Swift.Int
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
@@ -92,7 +93,7 @@ extension beCoMapIndoor.BEError : Foundation.LocalizedError {
 }
 @objc public class BEFloor : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let identifier: Swift.String
-  @objc final public let name: Swift.Int
+  @objc final public let floorIndex: Swift.Int
   @objc final public let label: Swift.String, floorDescription: Swift.String
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
@@ -126,6 +127,7 @@ public typealias BEPoints = [beCoMapIndoor.BEPoint]
   @objc @_Concurrency.MainActor(unsafe) dynamic public func setSite(_ site: beCoMapIndoor.BESite)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func getPoints() -> beCoMapIndoor.BEPoints
   @objc @_Concurrency.MainActor(unsafe) dynamic public func findMapPoints(searchText: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func selectFloor(with index: Swift.Int)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func select(point: beCoMapIndoor.BEPoint?)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func getRoute(from startPoint: beCoMapIndoor.BEPoint, to endPoint: beCoMapIndoor.BEPoint, wayPoints: beCoMapIndoor.BEPoints? = nil) -> [beCoMapIndoor.BEFloor]
   @objc @_Concurrency.MainActor(unsafe) dynamic public func showRouteOnFloor(on floor: beCoMapIndoor.BEFloor)

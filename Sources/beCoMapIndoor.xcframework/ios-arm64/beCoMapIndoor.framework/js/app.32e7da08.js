@@ -280,18 +280,18 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   };
   $PolyfillMap$$.prototype[Symbol.iterator] = $PolyfillMap$$.prototype.entries;
   var $maybeGetEntry$$ = function $$maybeGetEntry$$$($index$jscomp$70_map$$, $key$$) {
-    var $id$jscomp$6_id$jscomp$inline_74_type$$ = $key$$ && typeof $key$$;
-    "object" == $id$jscomp$6_id$jscomp$inline_74_type$$ || "function" == $id$jscomp$6_id$jscomp$inline_74_type$$ ? $idMap$$.has($key$$) ? $id$jscomp$6_id$jscomp$inline_74_type$$ = $idMap$$.get($key$$) : ($id$jscomp$6_id$jscomp$inline_74_type$$ = "" + ++$mapIndex$$, $idMap$$.set($key$$, $id$jscomp$6_id$jscomp$inline_74_type$$)) : $id$jscomp$6_id$jscomp$inline_74_type$$ = "p_" + $key$$;
-    var $list$$ = $index$jscomp$70_map$$.data_[$id$jscomp$6_id$jscomp$inline_74_type$$];
-    if ($list$$ && $jscomp.owns($index$jscomp$70_map$$.data_, $id$jscomp$6_id$jscomp$inline_74_type$$)) {
+    var $id$jscomp$6_id$jscomp$inline_29_type$$ = $key$$ && typeof $key$$;
+    "object" == $id$jscomp$6_id$jscomp$inline_29_type$$ || "function" == $id$jscomp$6_id$jscomp$inline_29_type$$ ? $idMap$$.has($key$$) ? $id$jscomp$6_id$jscomp$inline_29_type$$ = $idMap$$.get($key$$) : ($id$jscomp$6_id$jscomp$inline_29_type$$ = "" + ++$mapIndex$$, $idMap$$.set($key$$, $id$jscomp$6_id$jscomp$inline_29_type$$)) : $id$jscomp$6_id$jscomp$inline_29_type$$ = "p_" + $key$$;
+    var $list$$ = $index$jscomp$70_map$$.data_[$id$jscomp$6_id$jscomp$inline_29_type$$];
+    if ($list$$ && $jscomp.owns($index$jscomp$70_map$$.data_, $id$jscomp$6_id$jscomp$inline_29_type$$)) {
       for ($index$jscomp$70_map$$ = 0; $index$jscomp$70_map$$ < $list$$.length; $index$jscomp$70_map$$++) {
         var $entry$$ = $list$$[$index$jscomp$70_map$$];
         if ($key$$ !== $key$$ && $entry$$.key !== $entry$$.key || $key$$ === $entry$$.key) {
-          return {id:$id$jscomp$6_id$jscomp$inline_74_type$$, list:$list$$, index:$index$jscomp$70_map$$, entry:$entry$$};
+          return {id:$id$jscomp$6_id$jscomp$inline_29_type$$, list:$list$$, index:$index$jscomp$70_map$$, entry:$entry$$};
         }
       }
     }
-    return {id:$id$jscomp$6_id$jscomp$inline_74_type$$, list:$list$$, index:-1, entry:void 0};
+    return {id:$id$jscomp$6_id$jscomp$inline_29_type$$, list:$list$$, index:-1, entry:void 0};
   }, $makeIterator$$ = function $$makeIterator$$$($map$$, $func$$) {
     var $entry$$ = $map$$.head_;
     return $jscomp.iteratorPrototype(function() {
@@ -391,20 +391,20 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
     $webpackJsonpCallback$$($jsonpArray$$[$i$jscomp$0$$]);
   }
   var $parentJsonpFunction$$ = $oldJsonpFunction$$;
-  $deferredModules$$.push([219, 1]);
+  $deferredModules$$.push([174, 1]);
   return $checkDeferredModules$$();
-})({216:function($_View_module$jscomp$2_view$$, $exports$$, $__webpack_require__$$) {
+})({171:function($_View_module$jscomp$2_view$$, $exports$$, $__webpack_require__$$) {
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
   }
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.attributionHtml = function attributionHtml() {
-    return '<img src="public/images/favicon.ico" /> Map data \u00a9' + (new Date).getFullYear() + " beCo";
+    return '<img src="public/images/attribution-beco.svg"  alt="becomap"/> ';
   };
-  $exports$$.view = $exports$$.target = $exports$$.projection = $exports$$.imageSize = $exports$$.extent = void 0;
-  var $_Projection_projection$$ = $_interopRequireDefault$$($__webpack_require__$$(92));
-  $__webpack_require__$$(276);
-  $_View_module$jscomp$2_view$$ = $_interopRequireDefault$$($__webpack_require__$$(183));
+  $exports$$.imageSize = $exports$$.target = $exports$$.extent = $exports$$.projection = $exports$$.view = void 0;
+  var $_Projection_projection$$ = $_interopRequireDefault$$($__webpack_require__$$(73));
+  $__webpack_require__$$(219);
+  $_View_module$jscomp$2_view$$ = $_interopRequireDefault$$($__webpack_require__$$(142));
   $__webpack_require__$$ = $__webpack_require__$$(0);
   var $extent$$ = [0, 0, 2800, 1280];
   $exports$$.extent = $extent$$;
@@ -414,17 +414,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   $_View_module$jscomp$2_view$$ = new $_View_module$jscomp$2_view$$.default({projection:$_Projection_projection$$, center:(0, $__webpack_require__$$.getCenter)($extent$$), extent:$extent$$, zoom:2, minZoom:2, maxZoom:8});
   $exports$$.view = $_View_module$jscomp$2_view$$;
   $exports$$.target = "beco-container";
-}, 217:function($module$$, $exports$$, $Route___webpack_require__$$) {
+}, 172:function($module$$, $exports$$, $Route___webpack_require__$$) {
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
   }
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
@@ -432,51 +424,24 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$6_key$jscomp$54_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$6_key$jscomp$54_res$$) && null !== $arg$jscomp$6_key$jscomp$54_res$$) {
-        var $prim$$ = $arg$jscomp$6_key$jscomp$54_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$6_key$jscomp$54_res$$ = $prim$$.call($arg$jscomp$6_key$jscomp$54_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$6_key$jscomp$54_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$6_key$jscomp$54_res$$ = String($arg$jscomp$6_key$jscomp$54_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$6_key$jscomp$54_res$$) ? $arg$jscomp$6_key$jscomp$54_res$$ : String($arg$jscomp$6_key$jscomp$54_res$$);
-  }
+  $Route___webpack_require__$$(143);
+  $Route___webpack_require__$$(220);
   $Route___webpack_require__$$(72);
-  $Route___webpack_require__$$(63);
-  $Route___webpack_require__$$(68);
-  $Route___webpack_require__$$(69);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $Route___webpack_require__$$(91);
-  $Route___webpack_require__$$(213);
-  $Route___webpack_require__$$(277);
-  $Route___webpack_require__$$(78);
-  $Route___webpack_require__$$(79);
-  $Route___webpack_require__$$(70);
-  $Route___webpack_require__$$(71);
-  $Route___webpack_require__$$(67);
-  $Route___webpack_require__$$(80);
-  $_interopRequireDefault$$($Route___webpack_require__$$(278));
-  $_interopRequireDefault$$($Route___webpack_require__$$(93));
-  $_interopRequireDefault$$($Route___webpack_require__$$(179));
-  $_interopRequireDefault$$($Route___webpack_require__$$(57));
-  var $_extent$$ = $Route___webpack_require__$$(0), $_style$$ = $Route___webpack_require__$$(99), $_math$$ = $Route___webpack_require__$$(279);
+  $_interopRequireDefault$$($Route___webpack_require__$$(222));
+  $_interopRequireDefault$$($Route___webpack_require__$$(74));
+  $_interopRequireDefault$$($Route___webpack_require__$$(138));
+  $_interopRequireDefault$$($Route___webpack_require__$$(50));
+  var $_extent$$ = $Route___webpack_require__$$(0), $_style$$ = $Route___webpack_require__$$(76), $_math$$ = $Route___webpack_require__$$(223);
   $Route___webpack_require__$$ = function() {
     function $Route$$($map$$) {
       if (!(this instanceof $Route$$)) {
@@ -525,58 +490,23 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $Route___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 218:function($module$$, $exports$$, $Image$jscomp$1___webpack_require__$$) {
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
-  }
+}, 173:function($module$$, $exports$$, $Image$jscomp$1___webpack_require__$$) {
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
       var $descriptor$$ = $props$$[$i$$];
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$7_key$jscomp$55_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$7_key$jscomp$55_res$$) && null !== $arg$jscomp$7_key$jscomp$55_res$$) {
-        var $prim$$ = $arg$jscomp$7_key$jscomp$55_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$7_key$jscomp$55_res$$ = $prim$$.call($arg$jscomp$7_key$jscomp$55_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$7_key$jscomp$55_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$7_key$jscomp$55_res$$ = String($arg$jscomp$7_key$jscomp$55_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$7_key$jscomp$55_res$$) ? $arg$jscomp$7_key$jscomp$55_res$$ : String($arg$jscomp$7_key$jscomp$55_res$$);
-  }
-  $Image$jscomp$1___webpack_require__$$(72);
-  $Image$jscomp$1___webpack_require__$$(63);
-  $Image$jscomp$1___webpack_require__$$(68);
-  $Image$jscomp$1___webpack_require__$$(69);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $Image$jscomp$1___webpack_require__$$(78);
-  $Image$jscomp$1___webpack_require__$$(79);
-  $Image$jscomp$1___webpack_require__$$(70);
-  $Image$jscomp$1___webpack_require__$$(71);
-  $Image$jscomp$1___webpack_require__$$(67);
-  $Image$jscomp$1___webpack_require__$$(80);
   $Image$jscomp$1___webpack_require__$$ = function() {
     function $Image$$() {
       if (!(this instanceof $Image$$)) {
@@ -705,60 +635,54 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $Image$jscomp$1___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 219:function($module$$, $exports$$, $__webpack_require__$$) {
+}, 174:function($module$$, $exports$$, $__webpack_require__$$) {
   function $_typeof$$($obj$jscomp$0$$) {
     "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
+    $_typeof$$ = "function" === typeof Symbol && "symbol" === typeof Symbol.iterator ? function _typeof($obj$$) {
       return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
+    } : function _typeof($obj$$) {
+      return $obj$$ && "function" === typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
+    };
+    return $_typeof$$($obj$jscomp$0$$);
   }
-  function $_getRequireWildcardCache$$($nodeInterop$$) {
+  function $_getRequireWildcardCache$$() {
     if ("function" !== typeof WeakMap) {
       return null;
     }
-    var $cacheBabelInterop$$ = new WeakMap, $cacheNodeInterop$$ = new WeakMap;
-    return ($_getRequireWildcardCache$$ = function _getRequireWildcardCache($nodeInterop$$) {
-      return $nodeInterop$$ ? $cacheNodeInterop$$ : $cacheBabelInterop$$;
-    })($nodeInterop$$);
+    var $cache$$ = new WeakMap;
+    $_getRequireWildcardCache$$ = function _getRequireWildcardCache() {
+      return $cache$$;
+    };
+    return $cache$$;
   }
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
   }
-  $__webpack_require__$$(63);
-  $__webpack_require__$$(67);
-  $__webpack_require__$$(68);
-  $__webpack_require__$$(240);
-  $__webpack_require__$$(69);
-  $__webpack_require__$$(255);
-  $__webpack_require__$$(70);
-  $__webpack_require__$$(71);
-  $__webpack_require__$$(72);
-  $__webpack_require__$$(263);
-  var $_map$$ = $_interopRequireDefault$$($__webpack_require__$$(264));
-  $_interopRequireDefault$$($__webpack_require__$$(217));
-  var $data$$ = function _interopRequireWildcard($obj$$, $cache_nodeInterop$$) {
-    if (!$cache_nodeInterop$$ && $obj$$ && $obj$$.__esModule) {
+  $__webpack_require__$$(182);
+  var $_map$$ = $_interopRequireDefault$$($__webpack_require__$$(183));
+  $_interopRequireDefault$$($__webpack_require__$$(172));
+  var $data$$ = function _interopRequireWildcard($obj$$) {
+    if ($obj$$ && $obj$$.__esModule) {
       return $obj$$;
     }
     if (null === $obj$$ || "object" !== $_typeof$$($obj$$) && "function" !== typeof $obj$$) {
       return {default:$obj$$};
     }
-    if (($cache_nodeInterop$$ = $_getRequireWildcardCache$$($cache_nodeInterop$$)) && $cache_nodeInterop$$.has($obj$$)) {
-      return $cache_nodeInterop$$.get($obj$$);
+    var $cache$$ = $_getRequireWildcardCache$$();
+    if ($cache$$ && $cache$$.has($obj$$)) {
+      return $cache$$.get($obj$$);
     }
     var $newObj$$ = {}, $hasPropertyDescriptor$$ = Object.defineProperty && Object.getOwnPropertyDescriptor, $key$$;
     for ($key$$ in $obj$$) {
-      if ("default" !== $key$$ && Object.prototype.hasOwnProperty.call($obj$$, $key$$)) {
+      if (Object.prototype.hasOwnProperty.call($obj$$, $key$$)) {
         var $desc$$ = $hasPropertyDescriptor$$ ? Object.getOwnPropertyDescriptor($obj$$, $key$$) : null;
         $desc$$ && ($desc$$.get || $desc$$.set) ? Object.defineProperty($newObj$$, $key$$, $desc$$) : $newObj$$[$key$$] = $obj$$[$key$$];
       }
     }
     $newObj$$.default = $obj$$;
-    $cache_nodeInterop$$ && $cache_nodeInterop$$.set($obj$$, $newObj$$);
+    $cache$$ && $cache$$.set($obj$$, $newObj$$);
     return $newObj$$;
-  }($__webpack_require__$$(284)), $map$$;
+  }($__webpack_require__$$(228)), $map$$;
   window.GLOBALS = {DEBUG:!1};
   window.initMap = function $window$initMap$($floors$$, $params$$) {
     $map$$ = new $_map$$.default($data$$, $floors$$, $params$$);
@@ -828,18 +752,10 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
     $map$$.changeDirection(0);
     $map$$.removeLocationMarker();
   };
-}, 263:function($module$$, $exports$$, $__webpack_require__$$) {
-}, 264:function($module$$, $exports$$, $BeCoMap___webpack_require__$$) {
+}, 182:function($module$$, $exports$$, $__webpack_require__$$) {
+}, 183:function($module$$, $exports$$, $BeCoMap___webpack_require__$$) {
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
   }
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
@@ -847,49 +763,22 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$8_key$jscomp$57_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$8_key$jscomp$57_res$$) && null !== $arg$jscomp$8_key$jscomp$57_res$$) {
-        var $prim$$ = $arg$jscomp$8_key$jscomp$57_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$8_key$jscomp$57_res$$ = $prim$$.call($arg$jscomp$8_key$jscomp$57_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$8_key$jscomp$57_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$8_key$jscomp$57_res$$ = String($arg$jscomp$8_key$jscomp$57_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$8_key$jscomp$57_res$$) ? $arg$jscomp$8_key$jscomp$57_res$$ : String($arg$jscomp$8_key$jscomp$57_res$$);
-  }
+  $BeCoMap___webpack_require__$$(143);
   $BeCoMap___webpack_require__$$(72);
-  $BeCoMap___webpack_require__$$(63);
-  $BeCoMap___webpack_require__$$(68);
-  $BeCoMap___webpack_require__$$(69);
+  $BeCoMap___webpack_require__$$(196);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $BeCoMap___webpack_require__$$(213);
-  $BeCoMap___webpack_require__$$(265);
-  $BeCoMap___webpack_require__$$(91);
-  $BeCoMap___webpack_require__$$(78);
-  $BeCoMap___webpack_require__$$(79);
-  $BeCoMap___webpack_require__$$(70);
-  $BeCoMap___webpack_require__$$(71);
-  $BeCoMap___webpack_require__$$(67);
-  $BeCoMap___webpack_require__$$(80);
-  var $_underscore$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(178)), $_Map$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(181)), $_control$$ = $BeCoMap___webpack_require__$$(285), $_layer$$ = $BeCoMap___webpack_require__$$(287), $_Vector$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(182)), $_style$$ = $BeCoMap___webpack_require__$$(99), $_LineString$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(93)), $_Point$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(57)), 
-  $_extent$$ = $BeCoMap___webpack_require__$$(0), $_easing$$ = $BeCoMap___webpack_require__$$(28), $_model$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(272)), $_model2$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(217)), $_arrow$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(280)), $_Feature$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(118)), $_model3$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(281)), $_images$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(218)), 
-  $_model4$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(282)), $_model5$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(283)), $_projection$$ = $BeCoMap___webpack_require__$$(216);
+  var $_underscore$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(137)), $_Map$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(140)), $_control$$ = $BeCoMap___webpack_require__$$(229), $_layer$$ = $BeCoMap___webpack_require__$$(231), $_Vector$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(141)), $_style$$ = $BeCoMap___webpack_require__$$(76), $_LineString$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(74)), $_Point$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(50)), 
+  $_extent$$ = $BeCoMap___webpack_require__$$(0), $_easing$$ = $BeCoMap___webpack_require__$$(26), $_model$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(199)), $_model2$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(172)), $_arrow$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(224)), $_Feature$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(88)), $_model3$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(225)), $_images$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(173)), 
+  $_model4$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(226)), $_model5$$ = $_interopRequireDefault$$($BeCoMap___webpack_require__$$(227)), $_projection$$ = $BeCoMap___webpack_require__$$(171);
   $BeCoMap___webpack_require__$$ = function() {
     function $BeCoMap$$($graphObject$$, $floorData$$, $params$$) {
       if (!(this instanceof $BeCoMap$$)) {
@@ -1028,6 +917,8 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       $rotateAngle$$ && 0 <= $rotateAngle$$ && this.locationMarkerstyle.getImage().setRotation(Math.PI / 180 * $rotateAngle$$);
     }}, {key:"changeDirection", value:function changeDirection($rotateAngle$$) {
       0 <= $rotateAngle$$ && (this.locationMarkerstyle.getImage().setRotation(Math.PI / 180 * $rotateAngle$$), this.compassLayer.getSource().refresh());
+    }}, {key:"removeCurrentPosition", value:function removeCurrentPosition() {
+      this.whereami.removeCurrentPoint(this.map);
     }}, {key:"removeLocationMarker", value:function removeLocationMarker() {
       this.compassLayer && this.compassLayer.getSource().clear();
     }}]);
@@ -1035,17 +926,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $BeCoMap___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 272:function($module$$, $exports$$, $Floors___webpack_require__$$) {
+}, 199:function($module$$, $exports$$, $Floors___webpack_require__$$) {
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
   }
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
@@ -1053,46 +936,23 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$9_key$jscomp$58_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$9_key$jscomp$58_res$$) && null !== $arg$jscomp$9_key$jscomp$58_res$$) {
-        var $prim$$ = $arg$jscomp$9_key$jscomp$58_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$9_key$jscomp$58_res$$ = $prim$$.call($arg$jscomp$9_key$jscomp$58_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$9_key$jscomp$58_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$9_key$jscomp$58_res$$ = String($arg$jscomp$9_key$jscomp$58_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$9_key$jscomp$58_res$$) ? $arg$jscomp$9_key$jscomp$58_res$$ : String($arg$jscomp$9_key$jscomp$58_res$$);
-  }
+  $Floors___webpack_require__$$(131);
   $Floors___webpack_require__$$(72);
+  $Floors___webpack_require__$$(163);
+  $Floors___webpack_require__$$(168);
+  $Floors___webpack_require__$$(169);
+  $Floors___webpack_require__$$(170);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $Floors___webpack_require__$$(91);
-  $Floors___webpack_require__$$(63);
-  $Floors___webpack_require__$$(215);
-  $Floors___webpack_require__$$(67);
-  $Floors___webpack_require__$$(68);
-  $Floors___webpack_require__$$(69);
-  $Floors___webpack_require__$$(78);
-  $Floors___webpack_require__$$(79);
-  $Floors___webpack_require__$$(70);
-  $Floors___webpack_require__$$(71);
-  $Floors___webpack_require__$$(80);
-  var $_underscore$$ = $_interopRequireDefault$$($Floors___webpack_require__$$(178)), $_Image$$ = $_interopRequireDefault$$($Floors___webpack_require__$$(176)), $_ImageStatic$$ = $_interopRequireDefault$$($Floors___webpack_require__$$(286)), $_projection$$ = $Floors___webpack_require__$$(216);
+  var $_underscore$$ = $_interopRequireDefault$$($Floors___webpack_require__$$(137)), $_Image$$ = $_interopRequireDefault$$($Floors___webpack_require__$$(130)), $_ImageStatic$$ = $_interopRequireDefault$$($Floors___webpack_require__$$(230)), $_projection$$ = $Floors___webpack_require__$$(171);
   $Floors___webpack_require__$$ = function() {
     function $Floors$$($floors$$, $params$$) {
       if (!(this instanceof $Floors$$)) {
@@ -1136,59 +996,24 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $Floors___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 276:function($module$$, $exports$$, $__webpack_require__$$) {
-}, 278:function($module$$, $exports$$, $BecoMapMath___webpack_require__$$) {
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
-  }
+}, 219:function($module$$, $exports$$, $__webpack_require__$$) {
+}, 222:function($module$$, $exports$$, $BecoMapMath___webpack_require__$$) {
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
       var $descriptor$$ = $props$$[$i$$];
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$10_key$jscomp$59_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$10_key$jscomp$59_res$$) && null !== $arg$jscomp$10_key$jscomp$59_res$$) {
-        var $prim$$ = $arg$jscomp$10_key$jscomp$59_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$10_key$jscomp$59_res$$ = $prim$$.call($arg$jscomp$10_key$jscomp$59_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$10_key$jscomp$59_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$10_key$jscomp$59_res$$ = String($arg$jscomp$10_key$jscomp$59_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$10_key$jscomp$59_res$$) ? $arg$jscomp$10_key$jscomp$59_res$$ : String($arg$jscomp$10_key$jscomp$59_res$$);
-  }
-  $BecoMapMath___webpack_require__$$(72);
-  $BecoMapMath___webpack_require__$$(63);
-  $BecoMapMath___webpack_require__$$(68);
-  $BecoMapMath___webpack_require__$$(69);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $BecoMapMath___webpack_require__$$(78);
-  $BecoMapMath___webpack_require__$$(79);
-  $BecoMapMath___webpack_require__$$(70);
-  $BecoMapMath___webpack_require__$$(71);
-  $BecoMapMath___webpack_require__$$(67);
-  $BecoMapMath___webpack_require__$$(80);
   $BecoMapMath___webpack_require__$$ = function() {
     function $BecoMapMath$$() {
       if (!(this instanceof $BecoMapMath$$)) {
@@ -1245,13 +1070,8 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $BecoMapMath___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 279:function($module$$, $exports$$, $__webpack_require__$$) {
+}, 223:function($module$$, $exports$$, $__webpack_require__$$) {
   Object.defineProperty($exports$$, "__esModule", {value:!0});
-  $exports$$.calculateAngle = function calculateAngle($startNode$jscomp$1_y$$, $nextNode$$, $alwaysUp$$) {
-    var $x$$ = $startNode$jscomp$1_y$$[0] - $nextNode$$[0];
-    $startNode$jscomp$1_y$$ = $startNode$jscomp$1_y$$[1] - $nextNode$$[1];
-    return $alwaysUp$$ ? Math.atan($x$$ / $startNode$jscomp$1_y$$) : Math.atan2($x$$, $startNode$jscomp$1_y$$);
-  };
   $exports$$.calculatePointsDistance = function calculatePointsDistance($coord1_dy$$, $coord2$$) {
     var $dx$$ = $coord1_dy$$[0] - $coord2$$[0];
     $coord1_dy$$ = $coord1_dy$$[1] - $coord2$$[1];
@@ -1261,62 +1081,32 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
     $d_distanceBetweenNodes$$ = $distanceToSplitPoint$$ / $d_distanceBetweenNodes$$;
     return [$nextNode$$[0] + ($startNode$$[0] - $nextNode$$[0]) * $d_distanceBetweenNodes$$, $nextNode$$[1] + ($startNode$$[1] - $nextNode$$[1]) * $d_distanceBetweenNodes$$];
   };
-}, 280:function($module$$, $exports$$, $Arrow___webpack_require__$$) {
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
-  }
+  $exports$$.calculateAngle = function calculateAngle($startNode$jscomp$1_y$$, $nextNode$$, $alwaysUp$$) {
+    var $x$$ = $startNode$jscomp$1_y$$[0] - $nextNode$$[0];
+    $startNode$jscomp$1_y$$ = $startNode$jscomp$1_y$$[1] - $nextNode$$[1];
+    return $alwaysUp$$ ? Math.atan($x$$ / $startNode$jscomp$1_y$$) : Math.atan2($x$$, $startNode$jscomp$1_y$$);
+  };
+}, 224:function($module$$, $exports$$, $Arrow___webpack_require__$$) {
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
       var $descriptor$$ = $props$$[$i$$];
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$11_key$jscomp$60_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$11_key$jscomp$60_res$$) && null !== $arg$jscomp$11_key$jscomp$60_res$$) {
-        var $prim$$ = $arg$jscomp$11_key$jscomp$60_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$11_key$jscomp$60_res$$ = $prim$$.call($arg$jscomp$11_key$jscomp$60_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$11_key$jscomp$60_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$11_key$jscomp$60_res$$ = String($arg$jscomp$11_key$jscomp$60_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$11_key$jscomp$60_res$$) ? $arg$jscomp$11_key$jscomp$60_res$$ : String($arg$jscomp$11_key$jscomp$60_res$$);
-  }
   $Arrow___webpack_require__$$(72);
-  $Arrow___webpack_require__$$(63);
-  $Arrow___webpack_require__$$(68);
-  $Arrow___webpack_require__$$(69);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $Arrow___webpack_require__$$(91);
-  $Arrow___webpack_require__$$(78);
-  $Arrow___webpack_require__$$(79);
-  $Arrow___webpack_require__$$(70);
-  $Arrow___webpack_require__$$(71);
-  $Arrow___webpack_require__$$(67);
-  $Arrow___webpack_require__$$(80);
-  var $_style$$ = $Arrow___webpack_require__$$(99), $_Point$$ = function _interopRequireDefault($obj$$) {
+  var $_style$$ = $Arrow___webpack_require__$$(76), $_Point$$ = function _interopRequireDefault($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }($Arrow___webpack_require__$$(57));
+  }($Arrow___webpack_require__$$(50));
   $Arrow___webpack_require__$$ = function() {
     function $Arrow$$() {
       if (!(this instanceof $Arrow$$)) {
@@ -1335,17 +1125,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $Arrow___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 281:function($module$$, $exports$$, $Markers___webpack_require__$$) {
+}, 225:function($module$$, $exports$$, $Markers___webpack_require__$$) {
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
   }
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
@@ -1353,49 +1135,26 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$12_key$jscomp$61_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$12_key$jscomp$61_res$$) && null !== $arg$jscomp$12_key$jscomp$61_res$$) {
-        var $prim$$ = $arg$jscomp$12_key$jscomp$61_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$12_key$jscomp$61_res$$ = $prim$$.call($arg$jscomp$12_key$jscomp$61_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$12_key$jscomp$61_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$12_key$jscomp$61_res$$ = String($arg$jscomp$12_key$jscomp$61_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$12_key$jscomp$61_res$$) ? $arg$jscomp$12_key$jscomp$61_res$$ : String($arg$jscomp$12_key$jscomp$61_res$$);
-  }
+  $Markers___webpack_require__$$(131);
   $Markers___webpack_require__$$(72);
+  $Markers___webpack_require__$$(163);
+  $Markers___webpack_require__$$(168);
+  $Markers___webpack_require__$$(169);
+  $Markers___webpack_require__$$(170);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $Markers___webpack_require__$$(91);
-  $Markers___webpack_require__$$(63);
-  $Markers___webpack_require__$$(215);
-  $Markers___webpack_require__$$(67);
-  $Markers___webpack_require__$$(68);
-  $Markers___webpack_require__$$(69);
-  $Markers___webpack_require__$$(78);
-  $Markers___webpack_require__$$(79);
-  $Markers___webpack_require__$$(70);
-  $Markers___webpack_require__$$(71);
-  $Markers___webpack_require__$$(80);
-  var $_underscore$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(178));
-  $_interopRequireDefault$$($Markers___webpack_require__$$(118));
-  $_interopRequireDefault$$($Markers___webpack_require__$$(57));
-  var $_style$$ = $Markers___webpack_require__$$(99), $_GeoJSON$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(179)), $_Select$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(177)), $_condition$$ = $Markers___webpack_require__$$(19), $_images$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(218));
+  var $_underscore$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(137));
+  $_interopRequireDefault$$($Markers___webpack_require__$$(88));
+  $_interopRequireDefault$$($Markers___webpack_require__$$(50));
+  var $_style$$ = $Markers___webpack_require__$$(76), $_GeoJSON$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(138)), $_Select$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(136)), $_condition$$ = $Markers___webpack_require__$$(19), $_images$$ = $_interopRequireDefault$$($Markers___webpack_require__$$(173));
   $Markers___webpack_require__$$ = function() {
     function $Markers$$() {
       if (!(this instanceof $Markers$$)) {
@@ -1413,8 +1172,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       this.points = $points$$;
     }}, {key:"style", value:function style() {
       return new $_style$$.Style({text:new $_style$$.Text({offsetY:20, font:"bold 10px Open Sans,sans-serif", fill:new $_style$$.Fill({color:"#F90F00"}), stroke:new $_style$$.Stroke({color:"#eee", width:0.5})})});
-    }}, {key:"styleSelected", value:function styleSelected($category$$, $text$$, $color$$) {
-      return new $_style$$.Style({image:new $_style$$.Icon({scale:1, crossOrigin:null, src:$_images$$.default.getImage($category$$, "big"), anchor:[0.5, 0.5], anchorOrigin:"top-left"}), text:new $_style$$.Text({offsetY:30, text:$text$$, font:"bold 10px Open Sans,sans-serif", fill:new $_style$$.Fill({color:$color$$}), stroke:new $_style$$.Stroke({color:"#eee", width:0.5})})});
+    }}, {key:"styleSelected", value:function styleSelected($category$$, $text$$, $color$$, $clickable$$) {
+      return $clickable$$ ? new $_style$$.Style({image:new $_style$$.Icon({scale:1, crossOrigin:null, src:$_images$$.default.getImage($category$$, "big"), anchor:[0.5, 0.5], anchorOrigin:"top-left"}), text:new $_style$$.Text({offsetY:30, text:$text$$, font:"bold 10px Open Sans,sans-serif", fill:new $_style$$.Fill({color:$color$$}), stroke:new $_style$$.Stroke({color:"#eee", width:0.5})})}) : new $_style$$.Style({text:new $_style$$.Text({offsetY:20, font:"bold 10px Open Sans,sans-serif", fill:new $_style$$.Fill({color:"#F90F00"}), 
+      stroke:new $_style$$.Stroke({color:"#eee", width:0.5})})});
     }}, {key:"getFeature", value:function getFeature($features$jscomp$2_geojsonObject$$) {
       this.markers.clear();
       this.selectedPoint = null;
@@ -1427,9 +1187,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
     }}, {key:"getSelectFeature", value:function getSelectFeature($layer$$) {
       var $_this$$ = this;
       this.select || (this.select = new $_Select$$.default({condition:$_condition$$.singleclick, layers:[$layer$$], hitTolerance:10, style:function style($feature$$) {
-        return $_this$$.styleSelected($feature$$.get("icon"), $feature$$.get("name"), $feature$$.get("category_color_selected"));
+        return $_this$$.styleSelected($feature$$.get("icon"), $feature$$.get("name"), $feature$$.get("category_color_selected"), $feature$$.get("clickable"));
       }}), this.select.on("select", function($evt$$) {
-        0 < $evt$$.selected.length && (window.onPointSelected($evt$$.selected[0].getId()), this.selectedPoint = $evt$$.selected[0].getId());
+        0 < $evt$$.selected.length && $evt$$.selected[0].get("clickable") ? (window.onPointSelected($evt$$.selected[0].getId()), this.selectedPoint = $evt$$.selected[0].getId()) : clearSelectedPoint();
       }));
       return this.select;
     }}, {key:"selectPoint", value:function selectPoint($id$$, $map$$) {
@@ -1447,62 +1207,27 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $Markers___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 282:function($module$$, $exports$$, $Label___webpack_require__$$) {
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
-  }
+}, 226:function($module$$, $exports$$, $Label___webpack_require__$$) {
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
       var $descriptor$$ = $props$$[$i$$];
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$13_key$jscomp$62_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$13_key$jscomp$62_res$$) && null !== $arg$jscomp$13_key$jscomp$62_res$$) {
-        var $prim$$ = $arg$jscomp$13_key$jscomp$62_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$13_key$jscomp$62_res$$ = $prim$$.call($arg$jscomp$13_key$jscomp$62_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$13_key$jscomp$62_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$13_key$jscomp$62_res$$ = String($arg$jscomp$13_key$jscomp$62_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$13_key$jscomp$62_res$$) ? $arg$jscomp$13_key$jscomp$62_res$$ : String($arg$jscomp$13_key$jscomp$62_res$$);
-  }
   $Label___webpack_require__$$(72);
-  $Label___webpack_require__$$(63);
-  $Label___webpack_require__$$(68);
-  $Label___webpack_require__$$(69);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $Label___webpack_require__$$(91);
-  $Label___webpack_require__$$(78);
-  $Label___webpack_require__$$(79);
-  $Label___webpack_require__$$(70);
-  $Label___webpack_require__$$(71);
-  $Label___webpack_require__$$(67);
-  $Label___webpack_require__$$(80);
-  var $_style$$ = $Label___webpack_require__$$(99), $_GeoJSON$$ = function _interopRequireDefault($obj$$) {
+  var $_style$$ = $Label___webpack_require__$$(76), $_GeoJSON$$ = function _interopRequireDefault($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }($Label___webpack_require__$$(179));
+  }($Label___webpack_require__$$(138));
   $Label___webpack_require__$$ = function() {
     function $Label$$() {
       if (!(this instanceof $Label$$)) {
@@ -1522,17 +1247,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $Label___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 283:function($module$$, $exports$$, $CurrentPosition___webpack_require__$$) {
+}, 227:function($module$$, $exports$$, $CurrentPosition___webpack_require__$$) {
   function $_interopRequireDefault$$($obj$$) {
     return $obj$$ && $obj$$.__esModule ? $obj$$ : {default:$obj$$};
-  }
-  function $_typeof$$($obj$jscomp$0$$) {
-    "@babel/helpers - typeof";
-    return $_typeof$$ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function($obj$$) {
-      return typeof $obj$$;
-    } : function($obj$$) {
-      return $obj$$ && "function" == typeof Symbol && $obj$$.constructor === Symbol && $obj$$ !== Symbol.prototype ? "symbol" : typeof $obj$$;
-    }, $_typeof$$($obj$jscomp$0$$);
   }
   function $_defineProperties$$($target$$, $props$$) {
     for (var $i$$ = 0; $i$$ < $props$$.length; $i$$++) {
@@ -1540,48 +1257,21 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
       $descriptor$$.enumerable = $descriptor$$.enumerable || !1;
       $descriptor$$.configurable = !0;
       "value" in $descriptor$$ && ($descriptor$$.writable = !0);
-      Object.defineProperty($target$$, $_toPropertyKey$$($descriptor$$.key), $descriptor$$);
+      Object.defineProperty($target$$, $descriptor$$.key, $descriptor$$);
     }
   }
   function $_createClass$$($Constructor$$, $protoProps$$, $staticProps$$) {
     $protoProps$$ && $_defineProperties$$($Constructor$$.prototype, $protoProps$$);
     $staticProps$$ && $_defineProperties$$($Constructor$$, $staticProps$$);
-    Object.defineProperty($Constructor$$, "prototype", {writable:!1});
     return $Constructor$$;
   }
-  function $_toPropertyKey$$($arg$jscomp$14_key$jscomp$63_res$$) {
-    a: {
-      if ("object" === $_typeof$$($arg$jscomp$14_key$jscomp$63_res$$) && null !== $arg$jscomp$14_key$jscomp$63_res$$) {
-        var $prim$$ = $arg$jscomp$14_key$jscomp$63_res$$[Symbol.toPrimitive];
-        if (void 0 !== $prim$$) {
-          $arg$jscomp$14_key$jscomp$63_res$$ = $prim$$.call($arg$jscomp$14_key$jscomp$63_res$$, "string");
-          if ("object" !== $_typeof$$($arg$jscomp$14_key$jscomp$63_res$$)) {
-            break a;
-          }
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        $arg$jscomp$14_key$jscomp$63_res$$ = String($arg$jscomp$14_key$jscomp$63_res$$);
-      }
-    }
-    return "symbol" === $_typeof$$($arg$jscomp$14_key$jscomp$63_res$$) ? $arg$jscomp$14_key$jscomp$63_res$$ : String($arg$jscomp$14_key$jscomp$63_res$$);
-  }
   $CurrentPosition___webpack_require__$$(72);
-  $CurrentPosition___webpack_require__$$(63);
-  $CurrentPosition___webpack_require__$$(68);
-  $CurrentPosition___webpack_require__$$(69);
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.default = void 0;
-  $CurrentPosition___webpack_require__$$(91);
-  $CurrentPosition___webpack_require__$$(78);
-  $CurrentPosition___webpack_require__$$(79);
-  $CurrentPosition___webpack_require__$$(70);
-  $CurrentPosition___webpack_require__$$(71);
-  $CurrentPosition___webpack_require__$$(67);
-  $CurrentPosition___webpack_require__$$(80);
-  var $_style$$ = $CurrentPosition___webpack_require__$$(99);
-  $_interopRequireDefault$$($CurrentPosition___webpack_require__$$(118));
-  $_interopRequireDefault$$($CurrentPosition___webpack_require__$$(57));
-  var $_Overlay$$ = $_interopRequireDefault$$($CurrentPosition___webpack_require__$$(180));
+  var $_style$$ = $CurrentPosition___webpack_require__$$(76);
+  $_interopRequireDefault$$($CurrentPosition___webpack_require__$$(88));
+  $_interopRequireDefault$$($CurrentPosition___webpack_require__$$(50));
+  var $_Overlay$$ = $_interopRequireDefault$$($CurrentPosition___webpack_require__$$(139));
   $CurrentPosition___webpack_require__$$ = function() {
     function $CurrentPosition$$() {
       if (!(this instanceof $CurrentPosition$$)) {
@@ -1609,9 +1299,9 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }();
   $exports$$.default = $CurrentPosition___webpack_require__$$;
   $module$$.exports = $exports$$.default;
-}, 284:function($module$$) {
+}, 228:function($module$$) {
   $module$$.exports = JSON.parse('{"user_details":{"full_name":"Renjith Raj","address":"Jio 22 B","username":"reliance","email":"renjith@sayonetech.com","latitude":0,"longitude":0,"image":null,"map_bg_color":"#c1d1a3"},"floors":[{"id":5,"name":5,"class":"current","image":"https://becomaps-web-staging.s3.amazonaws.com/media/floor-image/final-all-chair.svg","label":"5","description":"Fifth floor"},{"id":6,"name":6,"class":"","image":"https://beco-maps-web.s3.amazonaws.com/media/floor-image/1-as.svg","label":"6","description":"Fifth floor"}],"points":[{"id":19,"name":"5B HR","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":18,"name":"Snacks Area","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":17,"name":"5B Conference room","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":16,"name":"5B Passage","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":15,"name":"5B Right corner","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":14,"name":"5B W101","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":13,"name":"5B W5","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":12,"name":"5B W4","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":11,"name":"Washroom","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":10,"name":"5B W3","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":9,"name":"5B W2","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":8,"name":"5B W1","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":7,"name":"Lift Passage","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":6,"name":"5B Window","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":5,"name":"Pantry ","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"},{"id":4,"name":"Lift 1","popular":false,"description":null,"category":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3"}],"edges":[[{"id":"618","start_id":777,"end_id":776,"cost":4.44},{"id":"620","start_id":773,"end_id":777,"cost":3.08},{"id":"621","start_id":774,"end_id":777,"cost":10.26}],[{"id":"650","start_id":729,"end_id":762,"cost":15.75},{"id":"651","start_id":762,"end_id":761,"cost":8.31}],[{"id":"564","start_id":728,"end_id":727,"cost":3.33},{"id":"598","start_id":727,"end_id":741,"cost":3.49},{"id":"629","start_id":727,"end_id":726,"cost":6.31}],[{"id":"610","start_id":766,"end_id":729,"cost":3.76},{"id":"611","start_id":729,"end_id":734,"cost":3.17},{"id":"613","start_id":730,"end_id":729,"cost":4.21},{"id":"650","start_id":729,"end_id":762,"cost":15.75}],[{"id":"602","start_id":737,"end_id":732,"cost":3.19},{"id":"607","start_id":732,"end_id":767,"cost":3.71},{"id":"646","start_id":732,"end_id":730,"cost":6.17}],[{"id":"563","start_id":747,"end_id":728,"cost":3.23},{"id":"568","start_id":731,"end_id":747,"cost":3.06},{"id":"627","start_id":747,"end_id":744,"cost":6.4}],[{"id":"584","start_id":743,"end_id":751,"cost":2.46},{"id":"585","start_id":751,"end_id":758,"cost":2.55},{"id":"635","start_id":751,"end_id":750,"cost":1.02}],[{"id":"576","start_id":752,"end_id":771,"cost":6.74},{"id":"577","start_id":758,"end_id":752,"cost":6.46},{"id":"614","start_id":763,"end_id":752,"cost":2.15}],[{"id":"614","start_id":763,"end_id":752,"cost":2.15}],[{"id":"573","start_id":774,"end_id":772,"cost":3.07},{"id":"578","start_id":772,"end_id":771,"cost":3.02},{"id":"622","start_id":772,"end_id":773,"cost":10.25}],[{"id":"620","start_id":773,"end_id":777,"cost":3.08},{"id":"622","start_id":772,"end_id":773,"cost":10.25},{"id":"637","start_id":778,"end_id":773,"cost":3.1}],[{"id":"640","start_id":770,"end_id":761,"cost":3.74},{"id":"651","start_id":762,"end_id":761,"cost":8.31},{"id":"652","start_id":761,"end_id":768,"cost":4.36}],[{"id":"641","start_id":768,"end_id":769,"cost":11.13},{"id":"643","start_id":768,"end_id":780,"cost":5.92},{"id":"652","start_id":761,"end_id":768,"cost":4.36}],[{"id":"573","start_id":774,"end_id":772,"cost":3.07},{"id":"574","start_id":775,"end_id":774,"cost":4.51},{"id":"621","start_id":774,"end_id":777,"cost":10.26}],[{"id":"630","start_id":780,"end_id":779,"cost":3.74},{"id":"643","start_id":768,"end_id":780,"cost":5.92}],[{"id":"599","start_id":741,"end_id":739,"cost":3.64},{"id":"600","start_id":739,"end_id":735,"cost":3.17},{"id":"644","start_id":739,"end_id":740,"cost":6.3}],[{"id":"572","start_id":760,"end_id":759,"cost":5.68},{"id":"581","start_id":759,"end_id":754,"cost":5.11}],[{"id":"634","start_id":757,"end_id":758,"cost":1.06},{"id":"636","start_id":750,"end_id":757,"cost":2.54},{"id":"638","start_id":757,"end_id":756,"cost":3.4}],[{"id":"587","start_id":736,"end_id":740,"cost":3.21},{"id":"628","start_id":740,"end_id":742,"cost":3.63},{"id":"644","start_id":739,"end_id":740,"cost":6.3},{"id":"645","start_id":740,"end_id":764,"cost":4.18}],[{"id":"565","start_id":760,"end_id":745,"cost":5.85},{"id":"572","start_id":760,"end_id":759,"cost":5.68}],[{"id":"567","start_id":745,"end_id":744,"cost":3.04},{"id":"569","start_id":744,"end_id":725,"cost":3.21},{"id":"625","start_id":744,"end_id":748,"cost":6.71},{"id":"627","start_id":747,"end_id":744,"cost":6.4}],[{"id":"623","start_id":725,"end_id":756,"cost":6.74},{"id":"624","start_id":756,"end_id":749,"cost":0.74},{"id":"638","start_id":757,"end_id":756,"cost":3.4}],[{"id":"593","start_id":764,"end_id":743,"cost":3.63},{"id":"594","start_id":738,"end_id":764,"cost":3.23},{"id":"645","start_id":740,"end_id":764,"cost":4.18}],[{"id":"615","start_id":749,"end_id":748,"cost":2.46},{"id":"617","start_id":749,"end_id":755,"cost":4.82},{"id":"624","start_id":756,"end_id":749,"cost":0.74}],[{"id":"635","start_id":751,"end_id":750,"cost":1.02},{"id":"636","start_id":750,"end_id":757,"cost":2.54},{"id":"639","start_id":726,"end_id":750,"cost":4.25}],[{"id":"583","start_id":741,"end_id":742,"cost":6.3},{"id":"591","start_id":742,"end_id":726,"cost":3.49},{"id":"592","start_id":742,"end_id":743,"cost":4.21},{"id":"628","start_id":740,"end_id":742,"cost":3.63}],[{"id":"584","start_id":743,"end_id":751,"cost":2.46},{"id":"592","start_id":742,"end_id":743,"cost":4.21},{"id":"593","start_id":764,"end_id":743,"cost":3.63}],[{"id":"571","start_id":746,"end_id":745,"cost":6.71},{"id":"579","start_id":753,"end_id":746,"cost":4.13},{"id":"616","start_id":748,"end_id":746,"cost":3}],[{"id":"577","start_id":758,"end_id":752,"cost":6.46},{"id":"585","start_id":751,"end_id":758,"cost":2.55},{"id":"634","start_id":757,"end_id":758,"cost":1.06}],[{"id":"617","start_id":749,"end_id":755,"cost":4.82}],[{"id":"601","start_id":735,"end_id":737,"cost":3.3},{"id":"602","start_id":737,"end_id":732,"cost":3.19},{"id":"604","start_id":737,"end_id":733,"cost":6.21}],[{"id":"615","start_id":749,"end_id":748,"cost":2.46},{"id":"616","start_id":748,"end_id":746,"cost":3},{"id":"625","start_id":744,"end_id":748,"cost":6.71}],[{"id":"569","start_id":744,"end_id":725,"cost":3.21},{"id":"570","start_id":725,"end_id":726,"cost":3.37},{"id":"623","start_id":725,"end_id":756,"cost":6.74},{"id":"626","start_id":728,"end_id":725,"cost":6.35}],[{"id":"605","start_id":767,"end_id":765,"cost":6.18},{"id":"607","start_id":732,"end_id":767,"cost":3.71}],[{"id":"570","start_id":725,"end_id":726,"cost":3.37},{"id":"591","start_id":742,"end_id":726,"cost":3.49},{"id":"629","start_id":727,"end_id":726,"cost":6.31},{"id":"639","start_id":726,"end_id":750,"cost":4.25}],[{"id":"575","start_id":771,"end_id":770,"cost":3.68},{"id":"576","start_id":752,"end_id":771,"cost":6.74},{"id":"578","start_id":772,"end_id":771,"cost":3.02},{"id":"649","start_id":771,"end_id":778,"cost":10.23}],[{"id":"563","start_id":747,"end_id":728,"cost":3.23},{"id":"564","start_id":728,"end_id":727,"cost":3.33},{"id":"626","start_id":728,"end_id":725,"cost":6.35}],[{"id":"589","start_id":735,"end_id":736,"cost":6.23},{"id":"600","start_id":739,"end_id":735,"cost":3.17},{"id":"601","start_id":735,"end_id":737,"cost":3.3}],[{"id":"580","start_id":754,"end_id":753,"cost":5.76},{"id":"581","start_id":759,"end_id":754,"cost":5.11}],[{"id":"609","start_id":765,"end_id":766,"cost":4.16},{"id":"610","start_id":766,"end_id":729,"cost":3.76}],[{"id":"574","start_id":775,"end_id":774,"cost":4.51},{"id":"582","start_id":753,"end_id":775,"cost":9.03},{"id":"619","start_id":775,"end_id":776,"cost":10.28}],[{"id":"603","start_id":730,"end_id":733,"cost":3.18},{"id":"606","start_id":765,"end_id":730,"cost":3.75},{"id":"613","start_id":730,"end_id":729,"cost":4.21},{"id":"646","start_id":732,"end_id":730,"cost":6.17}],[{"id":"588","start_id":733,"end_id":736,"cost":3.28},{"id":"603","start_id":730,"end_id":733,"cost":3.18},{"id":"604","start_id":737,"end_id":733,"cost":6.21},{"id":"612","start_id":733,"end_id":734,"cost":4.2}],[{"id":"605","start_id":767,"end_id":765,"cost":6.18},{"id":"606","start_id":765,"end_id":730,"cost":3.75},{"id":"609","start_id":765,"end_id":766,"cost":4.16}],[{"id":"596","start_id":734,"end_id":738,"cost":3.27},{"id":"611","start_id":729,"end_id":734,"cost":3.17},{"id":"612","start_id":733,"end_id":734,"cost":4.2}],[{"id":"587","start_id":736,"end_id":740,"cost":3.21},{"id":"588","start_id":733,"end_id":736,"cost":3.28},{"id":"589","start_id":735,"end_id":736,"cost":6.23},{"id":"647","start_id":736,"end_id":738,"cost":4.22}],[{"id":"594","start_id":738,"end_id":764,"cost":3.23},{"id":"596","start_id":734,"end_id":738,"cost":3.27},{"id":"647","start_id":736,"end_id":738,"cost":4.22}],[{"id":"618","start_id":777,"end_id":776,"cost":4.44},{"id":"619","start_id":775,"end_id":776,"cost":10.28}],[{"id":"631","start_id":779,"end_id":778,"cost":3.58},{"id":"637","start_id":778,"end_id":773,"cost":3.1},{"id":"649","start_id":771,"end_id":778,"cost":10.23}],[{"id":"641","start_id":768,"end_id":769,"cost":11.13}],[{"id":"575","start_id":771,"end_id":770,"cost":3.68},{"id":"640","start_id":770,"end_id":761,"cost":3.74},{"id":"648","start_id":770,"end_id":779,"cost":10.26}],[{"id":"630","start_id":780,"end_id":779,"cost":3.74},{"id":"631","start_id":779,"end_id":778,"cost":3.58},{"id":"648","start_id":770,"end_id":779,"cost":10.26}],[{"id":"566","start_id":745,"end_id":731,"cost":6.4},{"id":"568","start_id":731,"end_id":747,"cost":3.06}],[{"id":"565","start_id":760,"end_id":745,"cost":5.85},{"id":"566","start_id":745,"end_id":731,"cost":6.4},{"id":"567","start_id":745,"end_id":744,"cost":3.04},{"id":"571","start_id":746,"end_id":745,"cost":6.71}],[{"id":"579","start_id":753,"end_id":746,"cost":4.13},{"id":"580","start_id":754,"end_id":753,"cost":5.76},{"id":"582","start_id":753,"end_id":775,"cost":9.03}],[{"id":"583","start_id":741,"end_id":742,"cost":6.3},{"id":"598","start_id":727,"end_id":741,"cost":3.49},{"id":"599","start_id":741,"end_id":739,"cost":3.64}]],"nodes":[{"id":"777","x":1551.8148146451,"y":90.1523669164,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"762","x":938.387298584,"y":380.0994873047,"step":false,"point_id":17,"point_name":"5B Conference room","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":26},{"id":"727","x":1406.7820183723,"y":1112.7207306594,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"729","x":938.2362683688,"y":820.9740542819,"step":false,"point_id":16,"point_name":"5B Passage","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":22},{"id":"732","x":936.8010985603,"y":1111.6790139296,"step":false,"point_id":15,"point_name":"5B Right corner","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":21},{"id":"747","x":1590.469554842,"y":1113.1278756556,"step":false,"point_id":14,"point_name":"5B W101","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":25},{"id":"751","x":1379.6844482422,"y":817.5407409668,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"752","x":1379.2721083657,"y":565.5216628501,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"763","x":1318.9727783203,"y":565.8714294434,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":28},{"id":"772","x":1463.4434053855,"y":377.1306513011,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"773","x":1465.5784966587,"y":90.2326396578,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"761","x":1171.055019469,"y":378.4016356758,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"768","x":1172.8584949519,"y":256.2974881127,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"774","x":1549.5176299839,"y":377.3814882212,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"780","x":1173.978805542,"y":90.5040740967,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"739","x":1207.2976129537,"y":1112.2785717681,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"759","x":1840.3591000165,"y":774.3028245803,"step":false,"point_id":4,"point_name":"Lift 1","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":12},{"id":"757","x":1409.1751098633,"y":746.1772918701,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"740","x":1208.3397583196,"y":935.9595915256,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"760","x":1840.8004760742,"y":933.3190917969,"step":false,"point_id":7,"point_name":"Lift Passage","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":13},{"id":"744","x":1591.8981472956,"y":934.0152614884,"step":false,"point_id":8,"point_name":"5B W1","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":14},{"id":"756","x":1504.3427944949,"y":746.2249342437,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"764","x":1209.143380767,"y":818.8671048402,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"749","x":1525.07417745,"y":746.2353126857,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"750","x":1408.2939147949,"y":817.2229766846,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"742","x":1309.8714788593,"y":935.9856208391,"step":false,"point_id":9,"point_name":"5B W2","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":15},{"id":"743","x":1310.8167512602,"y":818.0763516949,"step":false,"point_id":10,"point_name":"5B W3","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":16},{"id":"746","x":1677.9829244636,"y":746.3118611031,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"758","x":1379.5678311538,"y":746.2652403956,"step":false,"point_id":11,"point_name":"Washroom","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":17},{"id":"755","x":1523.8746643066,"y":611.3464355469,"step":false,"point_id":5,"point_name":"Pantry ","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":27},{"id":"737","x":1026.1114129388,"y":1111.8769710056,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"748","x":1593.9506246324,"y":746.2697932705,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"725","x":1501.943847562,"y":935.0209597412,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"767","x":832.8788757324,"y":1111.4486694336,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"726","x":1407.6855184688,"y":936.1330721286,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"771","x":1378.963470459,"y":376.8844604492,"step":false,"point_id":12,"point_name":"5B W4","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":18},{"id":"728","x":1500.0391464092,"y":1112.9274358816,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"735","x":1118.5099541768,"y":1112.0817731627,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"754","x":1839.9620056152,"y":631.2400817871,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"766","x":833.0871582031,"y":821.7918395996,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"775","x":1675.8460998535,"y":377.7496337891,"step":false,"point_id":13,"point_name":"5B W5","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":19},{"id":"730","x":937.6538670461,"y":938.9440338671,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"733","x":1026.6478857777,"y":937.9586822504,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"765","x":832.740020752,"y":938.3819580078,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"734","x":1027.01086931,"y":820.2836198587,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"736","x":1118.5525626535,"y":937.7623110697,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"738","x":1118.5814517569,"y":819.5714400054,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"776","x":1675.9956359863,"y":90.0367736816,"step":false,"point_id":6,"point_name":"5B Window","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":20},{"id":"778","x":1378.8969614671,"y":90.3133268279,"step":false,"point_id":19,"point_name":"5B HR","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":24},{"id":"769","x":861.3040924072,"y":256.3343048096,"step":false,"point_id":18,"point_name":"Snacks Area","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"Room","category_image_url":"https://becomaps-web-staging.s3.amazonaws.com/media/category-image/marker_destination.png","category_text_color":"#2110e3","beacon":23},{"id":"770","x":1275.9004407902,"y":377.6365447183,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"779","x":1278.7232843437,"y":90.4065731058,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"731","x":1676.1878967285,"y":1113.3178710938,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"745","x":1676.9116554233,"y":934.1422043077,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"753","x":1678.5484313965,"y":630.6900024414,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null},{"id":"741","x":1309.1834744797,"y":1112.5044026518,"step":false,"point_id":null,"point_name":"","point_popular":false,"floor_id":5,"floor_description":"Fifth floor","category_name":"","category_image_url":"","category_text_color":"","beacon":null}]}');
 }});
 }).call(this || window)
 
-//# sourceMappingURL=app.8f9c848c.js.map
+//# sourceMappingURL=app.32e7da08.js.map

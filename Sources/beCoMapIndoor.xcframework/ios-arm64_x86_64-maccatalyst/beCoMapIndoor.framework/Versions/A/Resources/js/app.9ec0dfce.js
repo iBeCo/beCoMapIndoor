@@ -399,7 +399,7 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
   }
   Object.defineProperty($exports$$, "__esModule", {value:!0});
   $exports$$.attributionHtml = function attributionHtml() {
-    return '<img src="public/images/favicon.ico" /> Map data \u00a9' + (new Date).getFullYear() + " beCo";
+    return '<img src="public/images/attribution-beco.svg"  alt="becomap"/> ';
   };
   $exports$$.imageSize = $exports$$.target = $exports$$.extent = $exports$$.projection = $exports$$.view = void 0;
   var $_Projection_projection$$ = $_interopRequireDefault$$($__webpack_require__$$(73));
@@ -1304,4 +1304,4 @@ $jscomp.polyfill("Map", function($NativeMap$$) {
 }});
 }).call(this || window)
 
-//# sourceMappingURL=app.b9ee4552.js.map
+//# sourceMappingURL=app.9ec0dfce.js.map
