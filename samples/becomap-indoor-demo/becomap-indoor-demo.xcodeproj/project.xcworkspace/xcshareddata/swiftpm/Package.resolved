@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iBeCo/beCoMapIndoor.git",
       "state" : {
-        "revision" : "5d308e0c4581c87a00167d0a6ce6792bbecde8a5",
-        "version" : "1.1.0"
+        "revision" : "a8deca1172f8907372abed8af3083be7c6cc79ea",
+        "version" : "1.2.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
       "state" : {
-        "revision" : "07f7f26ded8df9645c072f220378879c4642e063",
-        "version" : "1.25.1"
+        "revision" : "65e8f29b2d63c4e38e736b25c27b83e012159be8",
+        "version" : "1.25.2"
       }
     }
   ],

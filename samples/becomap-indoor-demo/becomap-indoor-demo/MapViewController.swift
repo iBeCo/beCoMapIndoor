@@ -82,6 +82,7 @@ class MapViewController: UIViewController {
         mapView.trailingAnchor.constraint(equalTo: myview.safeTrailingAnchor).isActive = true
         mapView.delegate = self
         mapView.voiceAssistanceEnabled = false
+        mapView.defaultFloorIndex = 4
     }
     
     override func viewDidLayoutSubviews() {
