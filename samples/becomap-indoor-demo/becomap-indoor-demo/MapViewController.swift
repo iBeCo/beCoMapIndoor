@@ -167,6 +167,7 @@ extension MapViewController: BEViewDelegate {
                 let routeFloors = mapView.getRoute(from: pointA, to: pointB)
                 if routeFloors.count > 0 {
                     mapView.showRouteOnFloor(on: routeFloors.first!)
+                    serchHelper?.didPlotRouteWith(points: [pointA,pointB], floorList: routeFloors)
                 }
             }
         }

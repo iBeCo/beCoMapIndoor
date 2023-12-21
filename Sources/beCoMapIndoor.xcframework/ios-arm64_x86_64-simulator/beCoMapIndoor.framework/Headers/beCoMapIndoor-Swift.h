@@ -495,6 +495,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 
 
 
+@class BEZone;
 
 @interface BEView (SWIFT_EXTENSION(beCoMapIndoor))
 /// <h2>setSite(_ site: BESite)</h2>
@@ -511,6 +512,12 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 /// returns:
 /// list of BEPoint
 - (NSArray<BEPoint *> * _Nonnull)getPoints SWIFT_WARN_UNUSED_RESULT;
+/// <h2>getZones()</h2>
+/// You can fetch all the <a href="/docs/reference/ios/Classes/BEZone.html">BEZone</a> in the site using <code>getZones()</code>. The function will return a list of <a href="/docs/reference/ios/Classes/BEZone.html">BEZone</a>.
+///
+/// returns:
+/// list of BEPoint
+- (NSArray<BEZone *> * _Nonnull)getZones SWIFT_WARN_UNUSED_RESULT;
 /// <h2>findMapPoints(searchText: String)</h2>
 /// The function will help you to filter map points based on the name. The function will return a list of <a href="https://docs/reference/ios/Classes/BEPoint.html">BEPoint</a> based on the <code>searchText</code>. using a <a href="https://docs/reference/ios/Protocols/BEViewDelegate.html">BEViewDelegate</a> callback on <code>becoView(_:didFindResult:)</code>
 /// \param searchText Search string
@@ -772,6 +779,15 @@ SWIFT_PROTOCOL("_TtP13beCoMapIndoor14BEViewDelegate_")
 /// \param point BERoute reference
 ///
 - (void)becoView:(BEView * _Nonnull)mapView didDeviatedTo:(BEPoint * _Nonnull)point;
+@end
+
+
+SWIFT_CLASS("_TtC13beCoMapIndoor6BEZone")
+@interface BEZone : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, strong) BEPoint * _Nullable zonePoint;
+@property (nonatomic, readonly, copy) NSArray<BEPoint *> * _Nonnull elements;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol BeCoDelegate;
@@ -1382,6 +1398,7 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 
 
 
+@class BEZone;
 
 @interface BEView (SWIFT_EXTENSION(beCoMapIndoor))
 /// <h2>setSite(_ site: BESite)</h2>
@@ -1398,6 +1415,12 @@ SWIFT_CLASS("_TtC13beCoMapIndoor6BEView")
 /// returns:
 /// list of BEPoint
 - (NSArray<BEPoint *> * _Nonnull)getPoints SWIFT_WARN_UNUSED_RESULT;
+/// <h2>getZones()</h2>
+/// You can fetch all the <a href="/docs/reference/ios/Classes/BEZone.html">BEZone</a> in the site using <code>getZones()</code>. The function will return a list of <a href="/docs/reference/ios/Classes/BEZone.html">BEZone</a>.
+///
+/// returns:
+/// list of BEPoint
+- (NSArray<BEZone *> * _Nonnull)getZones SWIFT_WARN_UNUSED_RESULT;
 /// <h2>findMapPoints(searchText: String)</h2>
 /// The function will help you to filter map points based on the name. The function will return a list of <a href="https://docs/reference/ios/Classes/BEPoint.html">BEPoint</a> based on the <code>searchText</code>. using a <a href="https://docs/reference/ios/Protocols/BEViewDelegate.html">BEViewDelegate</a> callback on <code>becoView(_:didFindResult:)</code>
 /// \param searchText Search string
@@ -1659,6 +1682,15 @@ SWIFT_PROTOCOL("_TtP13beCoMapIndoor14BEViewDelegate_")
 /// \param point BERoute reference
 ///
 - (void)becoView:(BEView * _Nonnull)mapView didDeviatedTo:(BEPoint * _Nonnull)point;
+@end
+
+
+SWIFT_CLASS("_TtC13beCoMapIndoor6BEZone")
+@interface BEZone : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, strong) BEPoint * _Nullable zonePoint;
+@property (nonatomic, readonly, copy) NSArray<BEPoint *> * _Nonnull elements;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol BeCoDelegate;

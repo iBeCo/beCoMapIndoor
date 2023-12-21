@@ -37,6 +37,19 @@ import simd
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
+@objc public class BEZone : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let name: Swift.String
+  @objc public var zonePoint: beCoMapIndoor.BEPoint? {
+    @objc get
+  }
+  @objc public var elements: [beCoMapIndoor.BEPoint] {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public typealias BESites = [beCoMapIndoor.BESite]
 @objc public class BESite : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let identifier: Swift.String, bgColor: Swift.String
@@ -126,6 +139,7 @@ public typealias BEPoints = [beCoMapIndoor.BEPoint]
 @objc extension beCoMapIndoor.BEView {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func setSite(_ site: beCoMapIndoor.BESite)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func getPoints() -> beCoMapIndoor.BEPoints
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func getZones() -> [beCoMapIndoor.BEZone]
   @objc @_Concurrency.MainActor(unsafe) dynamic public func findMapPoints(searchText: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func selectFloor(with index: Swift.Int)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func select(point: beCoMapIndoor.BEPoint?)

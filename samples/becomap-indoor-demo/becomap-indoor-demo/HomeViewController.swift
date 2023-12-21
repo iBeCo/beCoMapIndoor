@@ -15,11 +15,6 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        navigationController?.setNavigationBarHidden(true, animated: animated)
-//    }
-    
     @IBAction func showMap(_ sender: UIButton) {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
         switch sender.tag {
