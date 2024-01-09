@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		5QlW/6d/3Skg6ynKT4+x+/jXxzs=
+		jW8A1DTwebp1//azA4rs43XTqok=
 		</data>
 		<key>Resources/BENavigationAssist.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		pjPuRYE1NwdNOIkDNdlKV5g3cTg=
+		46UdRvLcJeRwhjljYqp41clzwXM=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -627,7 +627,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eudaim4q3EWFr9ebhhaUYZaUt2GrmOnSruUTCrEmVcg=
+			x4Aj0qaJIC2PnKX/VaiNGUDQiZaxuA4kysiFtKd2HM4=
 			</data>
 		</dict>
 		<key>Headers/beCoMapIndoor.h</key>
@@ -641,70 +641,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Xa3ff1XPe1qFNJVrbk+OMmMP2UnFmfBRrgbI7Ftruo=
+			2Q67GNMB/4xQl0u3FakxqbLocLJXLPdwQpk0MUvs0mQ=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Smp3/a80HK4Osn54Y2ihpHTT2FOk/BZ9vr5gF9inIPs=
+			TAw6LhwPPp/jI37SF2qRkRQXYZQT3j7xqrTTSodHTgo=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			epWUF127ehCcPxBBxFwNPHlwBZ7hz2bFH8JYGVYy8EM=
+			3Xuz70NNct20eiC7GMvSae74DnK1+UKoS411Xz1EhK4=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Smp3/a80HK4Osn54Y2ihpHTT2FOk/BZ9vr5gF9inIPs=
+			TAw6LhwPPp/jI37SF2qRkRQXYZQT3j7xqrTTSodHTgo=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uaAm/9ZxWqhys6SnJb7xaVJiiJniUB9IedgAQqLt4zQ=
+			y2k3qM7C/pv6OnySOt1tL+bArm/jvT+2HZvuuCTQCKw=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Xa3ff1XPe1qFNJVrbk+OMmMP2UnFmfBRrgbI7Ftruo=
+			2Q67GNMB/4xQl0u3FakxqbLocLJXLPdwQpk0MUvs0mQ=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4KUCnwq7w0zSPKkqz+dfud2cMzuCv43bd4pj8oVatbM=
+			3reYQRCkr5y+NbJzjFQ6nuzMrJ8c0MuCt6WkdSwbmm0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ciG63a1P+LtR0Ix6LfcZch9I26oUr+K1IIhSTTdjyLw=
+			4oUqSRl9KSy6jCz3ddX7sO3iyrX2yaaoKQrf+x3Fml0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4KUCnwq7w0zSPKkqz+dfud2cMzuCv43bd4pj8oVatbM=
+			3reYQRCkr5y+NbJzjFQ6nuzMrJ8c0MuCt6WkdSwbmm0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DDqCPSF++NXHoLSOzOjmJLJzmhVl6NVbtJTOCDOnyZg=
+			A2L61IlbhtycHi63p6gfFoxQ0+0dvAyMwO+moUT1Lko=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -718,7 +718,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iug05+L3ba8B0DdXF80aP+3deDuB3v50MmWhYPvf1vE=
+			+jJs+i0f8k83F1pesNYBzSQGktfUW7W7+fJv3/6IDto=
 			</data>
 		</dict>
 		<key>Resources/BENavigationAssist.nib</key>
@@ -746,7 +746,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MLHeHpPp33kMO+Cjo+Tgi1Q9Slaq5RmP2bTa5wA0Btg=
+			Ff7OZ6fivvxzInfoaed37tCpUMsWc3FFCZHXFdqQs/4=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>

@@ -171,7 +171,12 @@ extension MapViewController: BEViewDelegate {
                 }
             }
         }
-    }
+        for aZone in mapView.getZones() {
+            for anElement in aZone.elements {
+                print(anElement.name)
+                mapPoints[anElement.pointId] = anElement
+            }
+        }    }
     
     func becoView(_ mapView: BEView, didFailedWith error: Error) {
         MBProgressHUD.hide(for: (self.view)!, animated: true)
