@@ -82,7 +82,7 @@ class MapViewController: UIViewController {
         mapView.trailingAnchor.constraint(equalTo: myview.safeTrailingAnchor).isActive = true
         mapView.delegate = self
         mapView.voiceAssistanceEnabled = false
-        mapView.defaultFloorIndex = 4
+        mapView.defaultFloorIndex = 5
     }
     
     override func viewDidLayoutSubviews() {
@@ -173,10 +173,10 @@ extension MapViewController: BEViewDelegate {
         }
         for aZone in mapView.getZones() {
             for anElement in aZone.elements {
-                print(anElement.name)
                 mapPoints[anElement.pointId] = anElement
             }
-        }    }
+        }
+    }
     
     func becoView(_ mapView: BEView, didFailedWith error: Error) {
         MBProgressHUD.hide(for: (self.view)!, animated: true)
@@ -203,7 +203,8 @@ extension MapViewController: BEViewDelegate {
     }
     
     func becoView(_ mapView: BEView, didFindResult results: BEPoints, forText searchText: String) {
-        serchHelper?.updateSearchList(points: results)
+        let searchableItems  = results.filter {$0.searchable == true}
+        serchHelper?.updateSearchList(points: searchableItems)
     }
     
     func becoView(_ mapView: BEView, didRouteFrom source: BEPoint, to destination: BEPoint) {

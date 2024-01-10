@@ -16,25 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //Thread.sleep(forTimeInterval: 2.0)//To delay splash screen
-        //if UserDefaults.standard.string(forKey: "usageToken") == nil {
-            //usageToken
-            //b3b919d29a0d9c07ad7c635b7c84b321c7348d6f -> HNH
-            //610f52c6ed6e9c335a9ba10d8003b1a0ec674acc -> PRODUCTION TEST
-            //b12ec0aa51dbc071e196c612e2326a15e40dd3fb -> Staging
-            //6530be9d54dda44289b4817802680a4e538841df -> Hilite Mall
-            
-            //licenceKey
-            //d5a1c252-c09d-4931-baf2-7b6fdff7520b --   - staging
-            //ed860e9e-fe47-4d82-b5fd-6b06eae180f6 -> HNH
-            //6ba68d21-0acc-40d4-b177-235cb3f0705a -> PRODUCTION TEST
-            
             UserDefaults.standard.set("6530be9d54dda44289b4817802680a4e538841df", forKey: "usageToken")
             UserDefaults.standard.set("6ba68d21-0acc-40d4-b177-235cb3f0705a", forKey: "licenceKey")
-            UserDefaults.standard.set("hilite-mall", forKey: "SITEID")//cyber-house world-trade-center-kochi
+            UserDefaults.standard.set("hilite-mall-playground", forKey: "SITEID")
+            //hilite-mall-playground
             UserDefaults.standard.synchronize()
-        //}
-        //Configure BeCo
+
+        
         let beCo = BeCo.sharedInstance()
         beCo.configureWith(licenceKey: UserDefaults.standard.string(forKey: "licenceKey")!, usageToken: UserDefaults.standard.string(forKey: "usageToken")!)
         return true

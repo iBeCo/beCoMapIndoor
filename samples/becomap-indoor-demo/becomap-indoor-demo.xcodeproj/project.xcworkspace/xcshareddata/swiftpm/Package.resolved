@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iBeCo/beCoMapIndoor.git",
       "state" : {
-        "revision" : "90fedbb9b882bb213620c907efb097feb3100b41",
-        "version" : "1.5.0"
+        "revision" : "c7b4bfeacf9cbdcc45cec07329a9925678ea04f1",
+        "version" : "1.5.1"
       }
     },
     {
