@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-            UserDefaults.standard.set("6530be9d54dda44289b4817802680a4e538841df", forKey: "usageToken")
+            UserDefaults.standard.set("618ed166bd2462712f2a66a89c24cef41719a7a3", forKey: "usageToken")
             UserDefaults.standard.set("6ba68d21-0acc-40d4-b177-235cb3f0705a", forKey: "licenceKey")
-            UserDefaults.standard.set("hilite-mall-playground", forKey: "SITEID")
+            UserDefaults.standard.set("apollo-lucknow-2", forKey: "SITEID")
             //hilite-mall-playground
             UserDefaults.standard.synchronize()
 

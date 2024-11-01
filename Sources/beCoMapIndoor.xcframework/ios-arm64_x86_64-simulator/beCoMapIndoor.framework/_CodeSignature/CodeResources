@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Z0oxq/X7KMHZVsTOdHG/H0Ph5Qg=
+		8ekGXsbgcUVx9O6NIhOgYMI2XJ8=
 		</data>
 		<key>BENavigationAssist.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/beCoMapIndoor-Swift.h</key>
 		<data>
-		7Y4iUckXKrsrT+WsL0GQCca5Ab4=
+		DZeZ04vpvujZcEmek/FIEm5wPjI=
 		</data>
 		<key>Headers/beCoMapIndoor.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cQCU05epuA6BpsVtBOeawHFnG6w=
+		ZFif7EP6FQ5ggRScqdYdWk4jQto=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -38,43 +38,43 @@
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3M5cOBoppQZMZ+m7H+CLqwJNfm4=
+		8E3iciqtr35wrzh1WFDX1uWMHhU=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vouLMpBBxXyQoaB2Ot7lHAVKjQ8=
+		Qab5eudEdvzuKGHMXyZ65e0abQA=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		m4+6AumSy7h8v2Pi6thshdA35Kc=
+		+DyloBOSpUvUqicXUi1MCLOGtVg=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vouLMpBBxXyQoaB2Ot7lHAVKjQ8=
+		Qab5eudEdvzuKGHMXyZ65e0abQA=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2AZsn2QKj+mdTZ9Dl/KYEyku5kw=
+		675MSWjALC6V53GANZvwV6aWLkw=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3M5cOBoppQZMZ+m7H+CLqwJNfm4=
+		8E3iciqtr35wrzh1WFDX1uWMHhU=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5tgNMM0JVxu6rE0Z4EcLeUtR+RI=
+		7im5hH1A6v3ZgFmp7hb8gnWIgOk=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WNrQkxX2uyqk1GAgtoDVuIfTRJU=
+		Q08upBlg0WNCLN1qCL/IFYJXaEs=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5tgNMM0JVxu6rE0Z4EcLeUtR+RI=
+		7im5hH1A6v3ZgFmp7hb8gnWIgOk=
 		</data>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mSX/0D9HYZk5+6a8CZMgZkMAvTc=
+		0kPIQ+/L6QVimELMs5xFRc6F/mY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -679,7 +679,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3d5JTRKI5stShUsk7tUD4xSuc6LWKA/wyn8xiEeG0S8=
+			tK3jzKt1npgHejLEiySuLqoGaNNWrPUld8Ld3gNdOHI=
 			</data>
 		</dict>
 		<key>BENavigationAssist.nib</key>
@@ -707,7 +707,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2DFZ/JXpG77q+zfBvVxih7Ub+EQ1XT+F9togMy+j5hA=
+			c8pVtp90K5Cj+7BGcCEHpJXQv2B8LxnS/wBr2lnD9Nk=
 			</data>
 		</dict>
 		<key>Headers/beCoMapIndoor.h</key>
@@ -728,70 +728,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l35uPazpsVqUZ8njvwWtXkn50SozoWZA/KJ3efwRJPo=
+			4JT5lgH5FwhruHj5VT8jh1fgEpbew01rheQ3PrWVghI=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6TCu41Iapiqq+bzppzJjXjnlKZNpnCGlRic5ldLr9o=
+			K0MVwFZrA+yUpRqSbay0XMDGYd4Pluh4feM5x6t8ZA0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tb+f6szBhS+bwgjmQb2KQ1AeL65reFQqDGOHVzSu5Kk=
+			kqRlweYl9IONfqDY8Z+MN8yqR+XzH7NWPT9sovFNo5Y=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6TCu41Iapiqq+bzppzJjXjnlKZNpnCGlRic5ldLr9o=
+			K0MVwFZrA+yUpRqSbay0XMDGYd4Pluh4feM5x6t8ZA0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xr3mSSgm7OabddbUAdnbKS7gjVEx41OIihASZQ3ejnM=
+			B/tZqgQKAEPviryXD53hu02knfN7YV5FpxclBidzhi0=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l35uPazpsVqUZ8njvwWtXkn50SozoWZA/KJ3efwRJPo=
+			4JT5lgH5FwhruHj5VT8jh1fgEpbew01rheQ3PrWVghI=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YPHQjDoa3TbTbN/YJKvSTXTx0zMZNSZ0QnppogpuTSg=
+			pLKt7jX4uSfNQl50Se3DYNZmyOJ4L+5vGESMMJYD3vc=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fXSIuVHyWEOHm2HKB2fW0htZHI59e8DYsvT1S6P8XrI=
+			GJGcqc8rudVKjXgrIgBlaWGsRK1wV7pG5JDa5XAj/wU=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YPHQjDoa3TbTbN/YJKvSTXTx0zMZNSZ0QnppogpuTSg=
+			pLKt7jX4uSfNQl50Se3DYNZmyOJ4L+5vGESMMJYD3vc=
 			</data>
 		</dict>
 		<key>Modules/beCoMapIndoor.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X1S58i74KyVpinBIbg6TTcvrG/fV3nTSSA/lhGIJ208=
+			YbD9fJOzZrtnjL6jDJ6ksv0il2XFa7GSXGkq8Vnpx3M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
