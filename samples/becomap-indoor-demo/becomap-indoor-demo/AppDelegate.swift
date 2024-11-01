@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set("hilite-mall", forKey: "SITEID")
             UserDefaults.standard.synchronize()
 
-        
         let beCo = BeCo.sharedInstance()
         beCo.configureWith(licenceKey: UserDefaults.standard.string(forKey: "licenceKey")!, usageToken: UserDefaults.standard.string(forKey: "usageToken")!)
         return true
