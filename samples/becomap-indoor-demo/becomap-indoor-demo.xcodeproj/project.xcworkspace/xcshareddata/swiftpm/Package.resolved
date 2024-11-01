@@ -1,12 +1,13 @@
 {
+  "originHash" : "20975ed51e2734e6af41266729efa79ac9b7972654ef22904288eaeae02c904c",
   "pins" : [
     {
       "identity" : "becomapindoor",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iBeCo/beCoMapIndoor.git",
       "state" : {
-        "revision" : "c7b4bfeacf9cbdcc45cec07329a9925678ea04f1",
-        "version" : "1.5.1"
+        "revision" : "749a48eed9fc8949fdb023d54555f9999010dde7",
+        "version" : "2.0.2"
       }
     },
     {
@@ -23,10 +24,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
       "state" : {
-        "revision" : "65e8f29b2d63c4e38e736b25c27b83e012159be8",
-        "version" : "1.25.2"
+        "revision" : "ebc7251dd5b37f627c93698e4374084d98409633",
+        "version" : "1.28.2"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
